@@ -1,0 +1,606 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "vacancies": "Vacancies",
+    "register": "Register",
+    "documents": "Documents",
+    "procedure": "Process",
+    "faq": "FAQ",
+    "partners": "Employers",
+    "contact": "Contact",
+    "registerBtn": "Start Registration"
+  },
+  "hero": {
+    "badge": "200+ successful placements",
+    "title": "Legal Employment Abroad",
+    "subtitle": "Israel • Europe • International Employers",
+    "description": "WVG helps you find legal employment, prepare all required documents, and depart for work abroad.",
+    "ctaRegister": "Submit Application",
+    "ctaVacancies": "View Vacancies",
+    "stats": {
+      "placements": "Workers Placed",
+      "countries": "Countries",
+      "years": "Years Experience",
+      "employers": "Partner Employers",
+      "since": "[PENDING TRANSLATION — see ka.json]",
+      "partners": "[PENDING TRANSLATION — see ka.json]",
+      "days": "[PENDING TRANSLATION — see ka.json]",
+      "capacity": "[PENDING TRANSLATION — see ka.json]"
+    }
+  },
+  "process": {
+    "title": "How the Process Works",
+    "subtitle": "5 simple steps to employment",
+    "steps": {
+      "register": {
+        "title": "Registration",
+        "desc": "Fill in the online form and submit your application"
+      },
+      "docs": {
+        "title": "Document Verification",
+        "desc": "Our team verifies your documents"
+      },
+      "interview": {
+        "title": "Interview",
+        "desc": "Interview with the employer"
+      },
+      "approval": {
+        "title": "Employer Approval",
+        "desc": "Employer confirms your candidacy"
+      },
+      "departure": {
+        "title": "Departure",
+        "desc": "Prepare for work and depart"
+      },
+      "screening": {
+        "title": "[PENDING TRANSLATION — see ka.json]",
+        "desc": "[PENDING TRANSLATION — see ka.json]"
+      },
+      "presentation": {
+        "title": "[PENDING TRANSLATION — see ka.json]",
+        "desc": "[PENDING TRANSLATION — see ka.json]"
+      },
+      "decision": {
+        "title": "[PENDING TRANSLATION — see ka.json]",
+        "desc": "[PENDING TRANSLATION — see ka.json]"
+      }
+    }
+  },
+  "vacancies": {
+    "title": "Active Vacancies",
+    "subtitle": "Find the right job for you",
+    "viewAll": "View All Vacancies",
+    "apply": "Apply Now",
+    "salary": "Salary",
+    "country": "Country",
+    "schedule": "Schedule",
+    "accommodation": "Accommodation",
+    "experience": "Experience",
+    "filters": {
+      "all": "All",
+      "country": "Country",
+      "profession": "Profession",
+      "salary": "Salary"
+    },
+    "notListed": "[PENDING TRANSLATION — see ka.json]",
+    "topDemand": "[PENDING TRANSLATION — see ka.json]",
+    "professions": [
+      "[PENDING TRANSLATION — see ka.json]",
+      "[PENDING TRANSLATION — see ka.json]",
+      "[PENDING TRANSLATION — see ka.json]",
+      "[PENDING TRANSLATION — see ka.json]",
+      "[PENDING TRANSLATION — see ka.json]",
+      "[PENDING TRANSLATION — see ka.json]",
+      "[PENDING TRANSLATION — see ka.json]"
+    ]
+  },
+  "about": {
+    "title": "About Work Visa Georgia",
+    "subtitle": "Georgia's leading work visa agency",
+    "mission": {
+      "title": "Our Mission",
+      "text": "WVG's mission is to find legally secured, safe and dignified employment opportunities abroad for Georgian workers. We operate on the principles of transparency, honesty and professionalism."
+    },
+    "experience": {
+      "title": "Experience",
+      "text": "WVG has 200+ successful placements in Israel and other countries. We work with trusted, legal employers and comply with all requirements of Georgian labor law."
+    },
+    "whyUs": {
+      "title": "Why WVG?",
+      "items": [
+        "Licensed agency",
+        "Transparent process",
+        "200+ successful placements",
+        "Direct connections with Israeli employers",
+        "Full document support",
+        "Individual candidate service",
+        "[PENDING TRANSLATION — see ka.json]"
+      ]
+    },
+    "intro": "[PENDING TRANSLATION — see ka.json]",
+    "specializationTitle": "[PENDING TRANSLATION — see ka.json]",
+    "specializationText": "[PENDING TRANSLATION — see ka.json]",
+    "construction": {
+      "title": "[PENDING TRANSLATION — see ka.json]",
+      "items": [
+        "[PENDING TRANSLATION — see ka.json]",
+        "[PENDING TRANSLATION — see ka.json]",
+        "[PENDING TRANSLATION — see ka.json]",
+        "[PENDING TRANSLATION — see ka.json]",
+        "[PENDING TRANSLATION — see ka.json]",
+        "[PENDING TRANSLATION — see ka.json]",
+        "[PENDING TRANSLATION — see ka.json]",
+        "[PENDING TRANSLATION — see ka.json]",
+        "[PENDING TRANSLATION — see ka.json]"
+      ]
+    },
+    "industrial": {
+      "title": "[PENDING TRANSLATION — see ka.json]",
+      "items": [
+        "[PENDING TRANSLATION — see ka.json]",
+        "[PENDING TRANSLATION — see ka.json]",
+        "[PENDING TRANSLATION — see ka.json]",
+        "[PENDING TRANSLATION — see ka.json]",
+        "[PENDING TRANSLATION — see ka.json]",
+        "[PENDING TRANSLATION — see ka.json]",
+        "[PENDING TRANSLATION — see ka.json]"
+      ]
+    },
+    "other": {
+      "title": "[PENDING TRANSLATION — see ka.json]",
+      "items": [
+        "[PENDING TRANSLATION — see ka.json]",
+        "[PENDING TRANSLATION — see ka.json]",
+        "[PENDING TRANSLATION — see ka.json]",
+        "[PENDING TRANSLATION — see ka.json]",
+        "[PENDING TRANSLATION — see ka.json]"
+      ]
+    },
+    "selectionTitle": "[PENDING TRANSLATION — see ka.json]",
+    "selectionText": "[PENDING TRANSLATION — see ka.json]",
+    "partnersTitle": "[PENDING TRANSLATION — see ka.json]",
+    "partnersText": "[PENDING TRANSLATION — see ka.json]",
+    "partnerSectors": [
+      "[PENDING TRANSLATION — see ka.json]",
+      "[PENDING TRANSLATION — see ka.json]",
+      "[PENDING TRANSLATION — see ka.json]",
+      "[PENDING TRANSLATION — see ka.json]"
+    ],
+    "approachTitle": "[PENDING TRANSLATION — see ka.json]",
+    "approachIntro": "[PENDING TRANSLATION — see ka.json]",
+    "approachValues": [
+      "[PENDING TRANSLATION — see ka.json]",
+      "[PENDING TRANSLATION — see ka.json]",
+      "[PENDING TRANSLATION — see ka.json]",
+      "[PENDING TRANSLATION — see ka.json]"
+    ],
+    "approachText": "[PENDING TRANSLATION — see ka.json]",
+    "contactTitle": "[PENDING TRANSLATION — see ka.json]",
+    "contactInfo": {
+      "company": "[PENDING TRANSLATION — see ka.json]",
+      "legal": "[PENDING TRANSLATION — see ka.json]",
+      "id": "[PENDING TRANSLATION — see ka.json]",
+      "address": "[PENDING TRANSLATION — see ka.json]",
+      "phone": "[PENDING TRANSLATION — see ka.json]",
+      "email": "[PENDING TRANSLATION — see ka.json]",
+      "website": "[PENDING TRANSLATION — see ka.json]"
+    }
+  },
+  "registration": {
+    "title": "Submit Your Application",
+    "subtitle": "Fill in the form and our team will contact you",
+    "fields": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "phone": "Phone Number",
+      "whatsapp": "WhatsApp Number",
+      "dob": "Date of Birth",
+      "profession": "Profession",
+      "experience": "Work Experience",
+      "country": "Country of Interest",
+      "hasPassport": "Do you have a valid passport?",
+      "workedIsrael": "Have you worked in Israel?",
+      "triedIsrael": "Have you tried entering Israel?",
+      "readyDate": "When are you ready to travel?",
+      "consent": "I agree to the processing of personal data",
+      "yes": "Yes",
+      "no": "No"
+    },
+    "submit": "Submit Application",
+    "success": "Your application has been submitted successfully! Our team will contact you shortly.",
+    "professions": [
+      "Construction Worker",
+      "Welder",
+      "Electrician",
+      "Mechanic",
+      "Factory Worker",
+      "Industrial Worker",
+      "Driver",
+      "General Worker",
+      "Other"
+    ],
+    "countries": [
+      "Israel",
+      "Germany",
+      "Poland",
+      "Other"
+    ]
+  },
+  "documents": {
+    "title": "Required Documents",
+    "subtitle": "Prepare all documents before departure",
+    "note": "Document requirements may vary depending on the country, employer, and legal procedure.",
+    "docs": [
+      {
+        "name": "Passport",
+        "desc": "Valid international passport (min. 6 months validity)"
+      },
+      {
+        "name": "ID Card",
+        "desc": "Georgian identity card"
+      },
+      {
+        "name": "CV",
+        "desc": "Work experience description"
+      },
+      {
+        "name": "Medical Certificate",
+        "desc": "Medical examination results"
+      },
+      {
+        "name": "Criminal Record Certificate",
+        "desc": "From the court state service"
+      },
+      {
+        "name": "Apostille",
+        "desc": "State certification of documents"
+      },
+      {
+        "name": "Recommendation Letter",
+        "desc": "From previous employer (useful)"
+      },
+      {
+        "name": "Photo",
+        "desc": "Recent photo (last 6 months)"
+      },
+      {
+        "name": "WVG Contract",
+        "desc": "Agreement signed with WVG"
+      },
+      {
+        "name": "3L Israel Contract",
+        "desc": "Israeli employer contract"
+      },
+      {
+        "name": "Affidavit",
+        "desc": "Legal affidavit"
+      },
+      {
+        "name": "Declaration",
+        "desc": "Personal declaration"
+      }
+    ]
+  },
+  "procedure": {
+    "title": "How to Go to Work in Israel?",
+    "subtitle": "The employment process through Work Visa Georgia",
+    "intro": "Work Visa Georgia helps candidates through every stage of the legal employment process in Israel — from initial registration to departure.",
+    "duration": {
+      "title": "How long does the process take?",
+      "text": "In most cases, the process from registration to departure takes approximately 60 days on average. However, specific timelines may vary depending on the program, profession, and employer requirements."
+    },
+    "steps": [
+      {
+        "title": "Registration",
+        "desc": "At the first stage, the candidate fills in an online application or has an initial consultation with a member of our team.",
+        "bullets": [
+          "Assessment of profession and experience",
+          "Verification of contact information",
+          "Determination of employment direction",
+          "Initial eligibility check"
+        ]
+      },
+      {
+        "title": "Document Preparation",
+        "desc": "According to the relevant program, the candidate prepares the required documents. Work Visa Georgia provides full administrative support throughout the documentation process.",
+        "bullets": [
+          "Passport",
+          "Identity card",
+          "Criminal record certificate",
+          "Medical certificate",
+          "References",
+          "Work experience supporting documents"
+        ]
+      },
+      {
+        "title": "Presenting the Candidate to the Employer",
+        "desc": "After receiving and verifying documents, the candidate's profile is sent to the relevant employer.",
+        "bullets": [
+          "Review of candidate documents",
+          "Conducting an interview",
+          "Verification of professional skills",
+          "Request for additional information"
+        ]
+      },
+      {
+        "title": "Employer Decision",
+        "desc": "If the employer approves the candidate, the next stage begins.",
+        "note": "Presenting a candidate does not mean automatic employment. The final decision is made by the employer and the relevant state authorities.",
+        "bullets": []
+      },
+      {
+        "title": "Work Permit and Related Procedures",
+        "desc": "For approved candidates, the relevant administrative and legal procedures begin.",
+        "bullets": [
+          "Employer",
+          "State authorities",
+          "Completeness of documentation",
+          "Current regulations"
+        ]
+      },
+      {
+        "title": "Pre-Departure Preparation",
+        "desc": "Before departure, the candidate receives detailed information on all necessary matters.",
+        "bullets": [
+          "Flight information",
+          "Information about the employer",
+          "Arrival procedures",
+          "Recommendations and instructions"
+        ]
+      },
+      {
+        "title": "Arrival and Start of Employment",
+        "desc": "Upon arriving in Israel, the candidate reports to the employer or their representative and begins work according to the terms of the relevant contract.",
+        "bullets": []
+      },
+      {
+        "title": "Post-Departure Support",
+        "desc": "Work Visa Georgia continues communicating with candidates and, where possible, assists them in resolving administrative and organizational matters.",
+        "bullets": []
+      }
+    ],
+    "ctaTitle": "[PENDING TRANSLATION — see ka.json]",
+    "ctaText": "[PENDING TRANSLATION — see ka.json]"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Answers to the most common questions",
+    "items": [
+      {
+        "q": "How can I register?",
+        "a": "Fill in our online form on the website or contact us via WhatsApp. Our team will reach you within 24 hours."
+      },
+      {
+        "q": "What documents do I need?",
+        "a": "Basic: passport, ID, CV, medical certificate, criminal record. Full list on the documents page."
+      },
+      {
+        "q": "How long does the process take?",
+        "a": "On average 4-8 weeks from application to departure, depending on documents and vacancies."
+      },
+      {
+        "q": "Is work experience required?",
+        "a": "Experience is preferred for many vacancies, but not always required. We have vacancies for beginners too."
+      },
+      {
+        "q": "Is a passport required?",
+        "a": "Yes, an international passport is required. Minimum 12 months validity recommended."
+      },
+      {
+        "q": "Is English or Hebrew required?",
+        "a": "Not required. We help with translation and communication."
+      },
+      {
+        "q": "What happens after registration?",
+        "a": "Our team contacts you for consultation, evaluates your profile, and offers suitable vacancies."
+      },
+      {
+        "q": "When will I know if I'm approved?",
+        "a": "Employer decision usually comes within 1-2 weeks after the interview."
+      },
+      {
+        "q": "Can I apply for Israel if I worked there before?",
+        "a": "Yes, if you had no legal issues during your previous visit. Tell us all details during consultation."
+      },
+      {
+        "q": "How do I contact WVG?",
+        "a": "WhatsApp, phone, email or contact form. We work Mon-Fri 9:00-18:00."
+      },
+      {
+        "q": "[PENDING TRANSLATION — see ka.json]",
+        "a": "[PENDING TRANSLATION — see ka.json]"
+      },
+      {
+        "q": "[PENDING TRANSLATION — see ka.json]",
+        "a": "[PENDING TRANSLATION — see ka.json]"
+      },
+      {
+        "q": "[PENDING TRANSLATION — see ka.json]",
+        "a": "[PENDING TRANSLATION — see ka.json]"
+      },
+      {
+        "q": "[PENDING TRANSLATION — see ka.json]",
+        "a": "[PENDING TRANSLATION — see ka.json]"
+      },
+      {
+        "q": "[PENDING TRANSLATION — see ka.json]",
+        "a": "[PENDING TRANSLATION — see ka.json]"
+      },
+      {
+        "q": "[PENDING TRANSLATION — see ka.json]",
+        "a": "[PENDING TRANSLATION — see ka.json]"
+      },
+      {
+        "q": "[PENDING TRANSLATION — see ka.json]",
+        "a": "[PENDING TRANSLATION — see ka.json]"
+      },
+      {
+        "q": "[PENDING TRANSLATION — see ka.json]",
+        "a": "[PENDING TRANSLATION — see ka.json]"
+      },
+      {
+        "q": "[PENDING TRANSLATION — see ka.json]",
+        "a": "[PENDING TRANSLATION — see ka.json]"
+      },
+      {
+        "q": "[PENDING TRANSLATION — see ka.json]",
+        "a": "[PENDING TRANSLATION — see ka.json]"
+      },
+      {
+        "q": "[PENDING TRANSLATION — see ka.json]",
+        "a": "[PENDING TRANSLATION — see ka.json]"
+      },
+      {
+        "q": "[PENDING TRANSLATION — see ka.json]",
+        "a": "[PENDING TRANSLATION — see ka.json]"
+      },
+      {
+        "q": "[PENDING TRANSLATION — see ka.json]",
+        "a": "[PENDING TRANSLATION — see ka.json]"
+      },
+      {
+        "q": "[PENDING TRANSLATION — see ka.json]",
+        "a": "[PENDING TRANSLATION — see ka.json]"
+      },
+      {
+        "q": "[PENDING TRANSLATION — see ka.json]",
+        "a": "[PENDING TRANSLATION — see ka.json]"
+      },
+      {
+        "q": "[PENDING TRANSLATION — see ka.json]",
+        "a": "[PENDING TRANSLATION — see ka.json]"
+      },
+      {
+        "q": "[PENDING TRANSLATION — see ka.json]",
+        "a": "[PENDING TRANSLATION — see ka.json]"
+      },
+      {
+        "q": "[PENDING TRANSLATION — see ka.json]",
+        "a": "[PENDING TRANSLATION — see ka.json]"
+      },
+      {
+        "q": "[PENDING TRANSLATION — see ka.json]",
+        "a": "[PENDING TRANSLATION — see ka.json]"
+      },
+      {
+        "q": "[PENDING TRANSLATION — see ka.json]",
+        "a": "[PENDING TRANSLATION — see ka.json]"
+      },
+      {
+        "q": "[PENDING TRANSLATION — see ka.json]",
+        "a": "[PENDING TRANSLATION — see ka.json]"
+      }
+    ]
+  },
+  "partners": {
+    "title": "For Employers",
+    "subtitle": "Find Georgian workforce for your business",
+    "description": "WVG offers recruitment of experienced, hardworking Georgian workers in construction, industrial and other sectors.",
+    "categories": [
+      "Construction Workers",
+      "Welders",
+      "Electricians",
+      "Mechanics",
+      "Factory Workers",
+      "Industrial Workers"
+    ],
+    "form": {
+      "title": "Request Workers",
+      "company": "Company Name",
+      "country": "Country",
+      "profession": "Required Profession",
+      "quantity": "Number of Workers",
+      "message": "Additional Information",
+      "submit": "Submit",
+      "contact": "Contact",
+      "email": "Email"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "We are ready to answer your questions",
+    "phone": "Phone",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "address": "Address",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "submit": "Send"
+    },
+    "workingHours": "Phone / WhatsApp: +995 591 888 774"
+  },
+  "footer": {
+    "tagline": "Legal employment in Israel",
+    "rights": "All rights reserved",
+    "links": "Quick Links",
+    "social": "Social Media"
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "200+ people already trust us"
+  },
+  "trustSignals": [
+    "[PENDING TRANSLATION — see ka.json]",
+    "[PENDING TRANSLATION — see ka.json]",
+    "[PENDING TRANSLATION — see ka.json]",
+    "[PENDING TRANSLATION — see ka.json]",
+    "[PENDING TRANSLATION — see ka.json]",
+    "[PENDING TRANSLATION — see ka.json]"
+  ],
+  "intro": {
+    "title": "[PENDING TRANSLATION — see ka.json]",
+    "text1": "[PENDING TRANSLATION — see ka.json]",
+    "text2": "[PENDING TRANSLATION — see ka.json]",
+    "text3": "[PENDING TRANSLATION — see ka.json]"
+  },
+  "whyWvg": {
+    "title": "[PENDING TRANSLATION — see ka.json]",
+    "intro": "[PENDING TRANSLATION — see ka.json]",
+    "sections": [
+      {
+        "title": "[PENDING TRANSLATION — see ka.json]",
+        "text": "[PENDING TRANSLATION — see ka.json]"
+      },
+      {
+        "title": "[PENDING TRANSLATION — see ka.json]",
+        "text": "[PENDING TRANSLATION — see ka.json]"
+      },
+      {
+        "title": "[PENDING TRANSLATION — see ka.json]",
+        "text": "[PENDING TRANSLATION — see ka.json]"
+      },
+      {
+        "title": "[PENDING TRANSLATION — see ka.json]",
+        "text": "[PENDING TRANSLATION — see ka.json]"
+      },
+      {
+        "title": "[PENDING TRANSLATION — see ka.json]",
+        "text": "[PENDING TRANSLATION — see ka.json]",
+        "bullets": [
+          "[PENDING TRANSLATION — see ka.json]",
+          "[PENDING TRANSLATION — see ka.json]",
+          "[PENDING TRANSLATION — see ka.json]",
+          "[PENDING TRANSLATION — see ka.json]",
+          "[PENDING TRANSLATION — see ka.json]",
+          "[PENDING TRANSLATION — see ka.json]"
+        ]
+      },
+      {
+        "title": "[PENDING TRANSLATION — see ka.json]",
+        "text": "[PENDING TRANSLATION — see ka.json]"
+      },
+      {
+        "title": "[PENDING TRANSLATION — see ka.json]",
+        "text": "[PENDING TRANSLATION — see ka.json]"
+      },
+      {
+        "title": "[PENDING TRANSLATION — see ka.json]",
+        "text": "[PENDING TRANSLATION — see ka.json]"
+      }
+    ]
+  }
+}

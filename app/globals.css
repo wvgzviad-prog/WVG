@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Inter', 'Noto Sans Georgian', sans-serif;
+}
+
+.font-geo {
+  font-family: 'Noto Sans Georgian', 'Inter', sans-serif;
+}
