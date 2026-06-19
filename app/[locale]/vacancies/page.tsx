@@ -8,11 +8,9 @@ const vacanciesData = [
   { id: 1, titleKa: 'სამშენებლო მუშა', titleEn: 'Construction Worker', titleRu: 'Строительный рабочий', country: 'ისრაელი', countryEn: 'Israel', countryRu: 'Израиль', salary: '$1,800–2,400', schedule: '6/1', accommodation: true, experience: false, category: 'construction' },
   { id: 2, titleKa: 'შემდუღებელი', titleEn: 'Welder', titleRu: 'Сварщик', country: 'ისრაელი', countryEn: 'Israel', countryRu: 'Израиль', salary: '$2,200–2,800', schedule: '6/1', accommodation: true, experience: true, category: 'skilled' },
   { id: 3, titleKa: 'ელექტრიკოსი', titleEn: 'Electrician', titleRu: 'Электрик', country: 'ისრაელი', countryEn: 'Israel', countryRu: 'Израиль', salary: '$2,000–2,600', schedule: '5/2', accommodation: true, experience: true, category: 'skilled' },
-  { id: 4, titleKa: 'ქარხნის მუშა', titleEn: 'Factory Worker', titleRu: 'Заводской рабочий', country: 'გერმანია', countryEn: 'Germany', countryRu: 'Германия', salary: '€1,600–2,000', schedule: '5/2', accommodation: true, experience: false, category: 'factory' },
-  { id: 5, titleKa: 'ფასადის მუშა', titleEn: 'Facade Worker', titleRu: 'Фасадный рабочий', country: 'ისრაელი', countryEn: 'Israel', countryRu: 'Израиль', salary: '$1,900–2,300', schedule: '6/1', accommodation: true, experience: false, category: 'construction' },
-  { id: 6, titleKa: 'მძღოლი', titleEn: 'Driver', titleRu: 'Водитель', country: 'ისრაელი', countryEn: 'Israel', countryRu: 'Израиль', salary: '$1,700–2,100', schedule: '5/2', accommodation: false, experience: true, category: 'driver' },
-  { id: 7, titleKa: 'ინდუსტრიული მუშა', titleEn: 'Industrial Worker', titleRu: 'Промышленный рабочий', country: 'პოლონეთი', countryEn: 'Poland', countryRu: 'Польша', salary: '€1,400–1,800', schedule: '5/2', accommodation: true, experience: false, category: 'factory' },
-  { id: 8, titleKa: 'მეჩარხე', titleEn: 'Lathe Operator', titleRu: 'Токарь', country: 'ისრაელი', countryEn: 'Israel', countryRu: 'Израиль', salary: '$2,100–2,600', schedule: '6/1', accommodation: true, experience: true, category: 'skilled' },
+  { id: 4, titleKa: 'ფასადის მუშა', titleEn: 'Facade Worker', titleRu: 'Фасадный рабочий', country: 'ისრაელი', countryEn: 'Israel', countryRu: 'Израиль', salary: '$1,900–2,300', schedule: '6/1', accommodation: true, experience: false, category: 'construction' },
+  { id: 5, titleKa: 'მძღოლი', titleEn: 'Driver', titleRu: 'Водитель', country: 'ისრაელი', countryEn: 'Israel', countryRu: 'Израиль', salary: '$1,700–2,100', schedule: '5/2', accommodation: false, experience: true, category: 'driver' },
+  { id: 6, titleKa: 'მეჩარხე', titleEn: 'Lathe Operator', titleRu: 'Токарь', country: 'ისრაელი', countryEn: 'Israel', countryRu: 'Израиль', salary: '$2,100–2,600', schedule: '6/1', accommodation: true, experience: true, category: 'skilled' },
 ];
 
 export default function VacanciesPage() {
@@ -39,7 +37,6 @@ export default function VacanciesPage() {
     { key: 'all', ka: 'ყველა', en: 'All', ru: 'Все' },
     { key: 'construction', ka: 'სამშენებლო', en: 'Construction', ru: 'Строительство' },
     { key: 'skilled', ka: 'კვალიფიციური', en: 'Skilled', ru: 'Квалифицированные' },
-    { key: 'factory', ka: 'ქარხანა', en: 'Factory', ru: 'Завод' },
     { key: 'driver', ka: 'მძღოლი', en: 'Driver', ru: 'Водитель' },
   ];
 
