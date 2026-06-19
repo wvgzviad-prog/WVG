@@ -170,6 +170,65 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* ── Real Candidate Deployment ── */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="w-12 h-1 rounded-full mb-5" style={{ background: '#c9a84c' }} />
+          <h2 className="text-2xl md:text-3xl font-black text-[#0f2557] tracking-tight mb-3">
+            {locale === 'ka' ? 'კანდიდატების გამგზავრების პროცესი' :
+             locale === 'ru' ? 'Процесс отправки кандидатов' :
+             'Real Candidate Deployment Process'}
+          </h2>
+          <p className="text-slate-600 mb-8 max-w-2xl text-sm leading-relaxed">
+            {locale === 'ka'
+              ? 'Work Visa Georgia კანდიდატებს მხარს უჭერს მთელი პროცესის განმავლობაში — საქართველოში რეგისტრაციიდან ჩამოსვლამდე და განსახლებამდე.'
+              : locale === 'ru'
+              ? 'Work Visa Georgia сопровождает кандидатов на протяжении всего процесса — от регистрации в Грузии до прибытия и заселения.'
+              : 'Work Visa Georgia supports candidates throughout the entire process, from registration in Georgia to arrival and onboarding.'}
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-3xl">
+            <div className="rounded-2xl overflow-hidden shadow-sm border border-slate-200">
+              <Image
+                src="/deploy-airport-queue.jpg"
+                alt="WVG candidates at Tbilisi International Airport check-in queue"
+                width={600}
+                height={450}
+                className="w-full h-52 object-cover"
+                loading="lazy"
+                draggable={false}
+              />
+              <div className="px-4 py-3 bg-white border-t border-slate-100 flex items-center gap-2">
+                <div className="w-1.5 h-1.5 rounded-full bg-green-500 flex-shrink-0" />
+                <p className="text-xs text-slate-500">
+                  {locale === 'ka' ? 'თბილისის საერთ. აეროპორტი — ჩეკ-ინი' :
+                   locale === 'ru' ? 'Аэропорт Тбилиси — регистрация на рейс' :
+                   'Tbilisi Intl. Airport — check-in'}
+                </p>
+              </div>
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-sm border border-slate-200">
+              <Image
+                src="/deploy-group-luggage.jpg"
+                alt="WVG candidate group assembled for departure with luggage"
+                width={600}
+                height={450}
+                className="w-full h-52 object-cover"
+                loading="lazy"
+                draggable={false}
+              />
+              <div className="px-4 py-3 bg-white border-t border-slate-100 flex items-center gap-2">
+                <div className="w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0" />
+                <p className="text-xs text-slate-500">
+                  {locale === 'ka' ? 'გამგზავრების მომზადება — ჯგუფი აეროპორტში' :
+                   locale === 'ru' ? 'Подготовка к отправке — группа в аэропорту' :
+                   'Pre-departure briefing — candidate group at airport'}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── Licenses & Trust Documents ── */}
       <section className="py-16" style={{ background: '#f8fafc' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">

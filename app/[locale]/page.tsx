@@ -1,5 +1,6 @@
 import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   ArrowRight, CheckCircle, Star, Users, Globe, Award, ChevronRight,
   MapPin, Clock, Briefcase, Shield, MessageCircle, Building2, TrendingUp,
@@ -223,7 +224,30 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="text-center mt-12">
+          {/* Real departure photo */}
+          <div className="mt-12 max-w-xl mx-auto rounded-2xl overflow-hidden shadow-sm border border-slate-200">
+            <Image
+              src="/deploy-airport-checkin.jpg"
+              alt="WVG candidates at Tbilisi International Airport check-in"
+              width={700}
+              height={525}
+              className="w-full h-auto object-cover"
+              loading="lazy"
+              draggable={false}
+            />
+            <div className="px-5 py-3 bg-white border-t border-slate-100 flex items-center gap-2">
+              <div className="w-1.5 h-1.5 rounded-full bg-green-500 flex-shrink-0" />
+              <p className="text-xs text-slate-500">
+                {locale === 'ka'
+                  ? 'WVG კანდიდატები — გამგზავრება თბილისის საერთაშორისო აეროპორტიდან'
+                  : locale === 'ru'
+                  ? 'Кандидаты WVG — отправка из Международного аэропорта Тбилиси'
+                  : 'WVG candidates departing from Tbilisi International Airport'}
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center mt-8">
             <Link href={`/${locale}/procedure`}
               className="inline-flex items-center gap-2 font-semibold px-6 py-3 rounded-xl border-2 border-[#0f2557] text-[#0f2557] hover:bg-[#0f2557] hover:text-white transition-all duration-200 text-sm">
               {fullProcedure} <ArrowRight size={16} />
