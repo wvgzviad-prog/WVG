@@ -66,10 +66,7 @@ export default function Navbar() {
 
           {/* Logo */}
           <Link href={`/${locale}`} className="flex items-center gap-2.5 flex-shrink-0">
-            <div className="w-9 h-9 rounded-lg flex items-center justify-center"
-              style={{ background: 'linear-gradient(135deg,#0f2557 0%,#1a3a7c 100%)' }}>
-              <span className="text-yellow-400 font-black text-xs tracking-tight">WVG</span>
-            </div>
+            <img src="/logo.svg" alt="Work Visa Georgia" className="w-9 h-9 rounded-full" />
             <div className="hidden sm:block leading-none">
               <div className="font-bold text-[#0f2557] text-[13px] tracking-tight">Work Visa</div>
               <div className="text-[11px] font-semibold" style={{ color: '#c9a84c' }}>Georgia</div>

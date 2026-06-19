@@ -26,9 +26,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-[#c9a84c] rounded-lg flex items-center justify-center">
-                <span className="text-[#091840] font-bold text-sm">WVG</span>
-              </div>
+              <img src="/logo.svg" alt="Work Visa Georgia" className="w-12 h-12 rounded-full flex-shrink-0" />
               <div>
                 <div className="font-bold text-white">Work Visa Georgia</div>
                 <div className="text-blue-300 text-xs">wvg.ge</div>

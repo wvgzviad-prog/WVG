@@ -1,0 +1,55 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path id="top-arc" d="M 28,150 A 122,122 0 0,1 272,150"/>
+    <path id="bottom-arc" d="M 22,162 A 128,128 0 0,0 278,162"/>
+  </defs>
+
+  <!-- Outer ring -->
+  <circle cx="150" cy="150" r="148" fill="#0d1a6e"/>
+  <!-- Inner circle -->
+  <circle cx="150" cy="150" r="108" fill="#0f1f75"/>
+  <!-- Ring border -->
+  <circle cx="150" cy="150" r="108" fill="none" stroke="#1e3299" stroke-width="1.5"/>
+
+  <!-- Georgian text top arc -->
+  <text fill="white" font-size="21" font-weight="bold" font-family="'Noto Sans Georgian', serif" letter-spacing="0.5">
+    <textPath href="#top-arc" startOffset="50%" text-anchor="middle">ვორქ ვიზა ჯორჯია</textPath>
+  </text>
+
+  <!-- English text bottom arc -->
+  <text fill="white" font-size="18" font-weight="bold" font-family="Arial, sans-serif" letter-spacing="2.5">
+    <textPath href="#bottom-arc" startOffset="50%" text-anchor="middle">WORK VISA GEORGIA</textPath>
+  </text>
+
+  <!-- Left decoration (pinwheel) -->
+  <g transform="translate(40,152)">
+    <path d="M0,-14 C3,-7 7,-3 14,0 C7,3 3,7 0,14 C-3,7 -7,3 -14,0 C-7,-3 -3,-7 0,-14Z" fill="white" opacity="0.85"/>
+    <circle r="3" fill="white"/>
+  </g>
+
+  <!-- Right decoration (pinwheel) -->
+  <g transform="translate(260,152)">
+    <path d="M0,-14 C3,-7 7,-3 14,0 C7,3 3,7 0,14 C-3,7 -7,3 -14,0 C-7,-3 -3,-7 0,-14Z" fill="white" opacity="0.85"/>
+    <circle r="3" fill="white"/>
+  </g>
+
+  <!-- Worker icon circle -->
+  <circle cx="150" cy="80" r="26" fill="none" stroke="white" stroke-width="2.5"/>
+  <!-- Head -->
+  <circle cx="150" cy="67" r="7" fill="white"/>
+  <!-- Body -->
+  <path d="M 139,77 Q 150,73 161,77 L 163,91 Q 150,87 137,91 Z" fill="white"/>
+  <!-- Briefcase -->
+  <rect x="143" y="82" width="14" height="10" rx="2" fill="white"/>
+  <path d="M 147,82 L 147,79 Q 150,77 153,79 L 153,82" fill="none" stroke="white" stroke-width="1.5"/>
+
+  <!-- Center text -->
+  <text x="150" y="128" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="'Noto Sans Georgian', serif">დასაქმება</text>
+  <text x="150" y="148" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="'Noto Sans Georgian', serif">საზღვარგარეთ</text>
+
+  <!-- Thin divider -->
+  <line x1="82" y1="160" x2="218" y2="160" stroke="white" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- ვიზები -->
+  <text x="150" y="178" text-anchor="middle" fill="white" font-size="15" font-weight="bold" font-family="'Noto Sans Georgian', serif">ვიზები</text>
+</svg>
