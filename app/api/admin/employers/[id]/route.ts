@@ -1,6 +1,6 @@
 import { NextRequest } from 'next/server';
 import { requireAdmin } from '@/lib/session.server';
-import { updateRecord } from '@/lib/airtable.server';
+import { updateRecord } from '@/lib/google-sheets.server';
 import { ok, err } from '@/lib/api';
 
 const VALID = ['Pending', 'Approved', 'Active', 'Rejected'];

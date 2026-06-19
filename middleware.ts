@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getIronSession } from 'iron-session';
-import type { AdminSession } from '@/lib/session.config';
-import { SESSION_OPTIONS } from '@/lib/session.config';
+import type { AdminSession } from '@/lib/session.server';
+import { SESSION_OPTIONS } from '@/lib/session.server';
 import createI18nMiddleware from 'next-intl/middleware';
 import { routing } from './i18n/routing';
 

@@ -1,6 +1,6 @@
 import { NextRequest } from 'next/server';
 import { requireAdmin } from '@/lib/session.server';
-import { getRecord, updateRecord, deleteRecord } from '@/lib/airtable.server';
+import { getRecord, updateRecord, deleteRecord } from '@/lib/google-sheets.server';
 import { ok, err } from '@/lib/api';
 
 type Ctx = { params: Promise<{ id: string }> };

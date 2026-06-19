@@ -1,6 +1,6 @@
 import { NextRequest } from 'next/server';
 import { requireAdmin } from '@/lib/session.server';
-import { listRecords } from '@/lib/airtable.server';
+import { listRecords } from '@/lib/google-sheets.server';
 import { ok, err } from '@/lib/api';
 
 export async function GET(req: NextRequest) {
