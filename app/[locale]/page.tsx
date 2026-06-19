@@ -15,10 +15,10 @@ export default function HomePage() {
   const whyUsItems        = t.raw('about.whyUs.items') as string[];
 
   const vacancyPreviews = [
-    { title: locale === 'ka' ? 'შემდუღებელი'             : locale === 'ru' ? 'Сварщик'             : 'Welder',            country: locale === 'ka' ? 'ისრაელი' : 'Israel', salary: '$2,200–2,800', schedule: '6/1' },
-    { title: locale === 'ka' ? 'სამშენებლო სპეციალობები' : locale === 'ru' ? 'Строительные спец.' : 'Construction',      country: locale === 'ka' ? 'ისრაელი' : 'Israel', salary: '$1,800–2,400', schedule: '6/1' },
-    { title: locale === 'ka' ? 'სანტექნიკოსი'            : locale === 'ru' ? 'Сантехник'           : 'Plumber',           country: locale === 'ka' ? 'ისრაელი' : 'Israel', salary: '$2,000–2,500', schedule: '5/2' },
-    { title: locale === 'ka' ? 'მომვლელი / ძიძა'         : locale === 'ru' ? 'Сиделка / Няня'      : 'Caregiver / Nanny', country: locale === 'ka' ? 'ისრაელი' : 'Israel', salary: '$1,600–2,000', schedule: '5/2' },
+    { title: locale === 'ka' ? 'შემდუღებელი' : locale === 'ru' ? 'Сварщик'             : 'Welder',              country: locale === 'ka' ? 'ისრაელი' : locale === 'ru' ? 'Израиль' : 'Israel', salary: '$2,500–3,000', schedule: locale === 'ka' ? 'დამსაქმებლის გრაფიკი' : locale === 'ru' ? 'По графику работодателя' : 'Employer schedule' },
+    { title: locale === 'ka' ? 'მშენებელი'   : locale === 'ru' ? 'Строительный рабочий' : 'Construction Worker', country: locale === 'ka' ? 'ისრაელი' : locale === 'ru' ? 'Израиль' : 'Israel', salary: '$2,200–2,700', schedule: locale === 'ka' ? 'დამსაქმებლის გრაფიკი' : locale === 'ru' ? 'По графику работодателя' : 'Employer schedule' },
+    { title: locale === 'ka' ? 'ზეინკალი'    : locale === 'ru' ? 'Слесарь / Сантехник'  : 'Plumber / Fitter',    country: locale === 'ka' ? 'ისრაელი' : locale === 'ru' ? 'Израиль' : 'Israel', salary: '$2,500–3,000', schedule: locale === 'ka' ? 'დამსაქმებლის გრაფიკი' : locale === 'ru' ? 'По графику работодателя' : 'Employer schedule' },
+    { title: locale === 'ka' ? 'მომვლელი'    : locale === 'ru' ? 'Сиделка'              : 'Caregiver',           country: locale === 'ka' ? 'ისრაელი' : locale === 'ru' ? 'Израиль' : 'Israel', salary: '$2,500–3,000', schedule: locale === 'ka' ? 'დამსაქმებლის გრაფიკი' : locale === 'ru' ? 'По графику работодателя' : 'Employer schedule' },
   ];
 
   /* ─── Social proof stats ─────────────────────────────────── */
