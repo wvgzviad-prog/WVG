@@ -17,7 +17,7 @@ export default function HomePage() {
 
   const vacancyPreviews = [
     { title: locale === 'ka' ? 'შემდუღებელი' : locale === 'ru' ? 'Сварщик'             : 'Welder',              country: locale === 'ka' ? 'ისრაელი' : locale === 'ru' ? 'Израиль' : 'Israel', salary: '$2,500–3,000', schedule: locale === 'ka' ? 'დამსაქმებლის გრაფიკი' : locale === 'ru' ? 'По графику работодателя' : 'Employer schedule' },
-    { title: locale === 'ka' ? 'მშენებელი'   : locale === 'ru' ? 'Строительный рабочий' : 'Construction Worker', country: locale === 'ka' ? 'ისრაელი' : locale === 'ru' ? 'Израиль' : 'Israel', salary: '$2,200–2,700', schedule: locale === 'ka' ? 'დამსაქმებლის გრაფიკი' : locale === 'ru' ? 'По графику работодателя' : 'Employer schedule' },
+    { title: locale === 'ka' ? 'მშენებელი'   : locale === 'ru' ? 'Строительный рабочий' : 'Construction Worker', country: locale === 'ka' ? 'ისრაელი' : locale === 'ru' ? 'Израиль' : 'Israel', salary: '$2,500–2,700', schedule: locale === 'ka' ? 'დამსაქმებლის გრაფიკი' : locale === 'ru' ? 'По графику работодателя' : 'Employer schedule' },
     { title: locale === 'ka' ? 'ზეინკალი'    : locale === 'ru' ? 'Слесарь / Сантехник'  : 'Plumber / Fitter',    country: locale === 'ka' ? 'ისრაელი' : locale === 'ru' ? 'Израиль' : 'Israel', salary: '$2,500–3,000', schedule: locale === 'ka' ? 'დამსაქმებლის გრაფიკი' : locale === 'ru' ? 'По графику работодателя' : 'Employer schedule' },
     { title: locale === 'ka' ? 'მომვლელი'    : locale === 'ru' ? 'Сиделка'              : 'Caregiver',           country: locale === 'ka' ? 'ისრაელი' : locale === 'ru' ? 'Израиль' : 'Israel', salary: '$2,500–3,000', schedule: locale === 'ka' ? 'დამსაქმებლის გრაფიკი' : locale === 'ru' ? 'По графику работодателя' : 'Employer schedule' },
   ];

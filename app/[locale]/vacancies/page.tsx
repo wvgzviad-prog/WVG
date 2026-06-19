@@ -50,8 +50,11 @@ const vacanciesData = [
     status: 'active',
     category: 'construction',
     country: 'Israel',
-    salaryMin: 2200,
+    salaryMin: 2500,
     salaryMax: 2700,
+    workScheduleKa: '10 საათი/დღე',
+    workScheduleEn: '10 hours/day',
+    workScheduleRu: '10 часов/день',
     experience: true,
     accommodation: true,
     registrationUrl: 'https://tally.so/r/dWzRXd',
@@ -263,7 +266,9 @@ export default function VacanciesPage() {
                       </div>
                       <div className="flex items-center gap-2 text-slate-600 text-sm">
                         <Clock size={15} className="text-blue-400 flex-shrink-0" />
-                        {scheduleLabel}
+                        {locale === 'ka' ? ((v as Record<string,unknown>).workScheduleKa as string ?? scheduleLabel)
+                          : locale === 'ru' ? ((v as Record<string,unknown>).workScheduleRu as string ?? scheduleLabel)
+                          : ((v as Record<string,unknown>).workScheduleEn as string ?? scheduleLabel)}
                       </div>
                       <div className="flex items-center gap-2 text-slate-600 text-sm">
                         <MapPin size={15} className="text-yellow-500 flex-shrink-0" />
