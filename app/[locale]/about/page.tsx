@@ -184,51 +184,77 @@ export default function AboutPage() {
              locale === 'ru' ? 'WVG официально лицензирована Министерством труда, здравоохранения и социальной защиты Грузии и располагает банковской гарантией на 50 000 лари.' :
              'WVG is officially licensed by the Ministry of Labour, Health and Social Protection of Georgia and holds a 50,000 GEL bank guarantee.'}
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl">
+          {/* Collage: cards slightly rotated and overlapping */}
+          <div className="flex flex-col md:flex-row gap-4 md:gap-0 md:items-start max-w-2xl">
             {/* Ministry of Labour Certificate */}
-            <div className="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
-              <div className="p-4 border-b border-slate-100">
+            <div
+              className="bg-white rounded-2xl border border-slate-200 shadow-md overflow-hidden w-full md:w-64"
+              style={{ transform: 'rotate(-2deg)', position: 'relative', zIndex: 2 }}
+            >
+              <div className="p-3 border-b border-slate-100">
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-green-500" />
-                  <span className="text-xs font-semibold text-slate-500 uppercase tracking-wide">
+                  <div className="w-2 h-2 rounded-full bg-green-500 flex-shrink-0" />
+                  <span className="text-xs font-semibold text-slate-500 uppercase tracking-wide leading-tight">
                     {locale === 'ka' ? 'შრომის სამინისტრო — სერტიფიკატი' :
                      locale === 'ru' ? 'Министерство труда — сертификат' :
                      'Ministry of Labour — Certificate'}
                   </span>
                 </div>
               </div>
-              <div className="select-none" style={{ pointerEvents: 'none' }}>
+              <div className="relative select-none" style={{ pointerEvents: 'none' }}>
                 <Image
                   src="/trust-certificate-ka.jpg"
                   alt="Ministry of Labour Certificate – Work Visa Georgia"
-                  width={600}
-                  height={430}
+                  width={400}
+                  height={286}
                   className="w-full h-auto"
+                  style={{ filter: 'blur(2px)' }}
                   draggable={false}
                 />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span
+                    className="text-[#0f2557] font-black text-2xl tracking-widest select-none"
+                    style={{ opacity: 0.18, transform: 'rotate(-25deg)', whiteSpace: 'nowrap' }}
+                  >
+                    WVG.GE
+                  </span>
+                </div>
               </div>
             </div>
+
             {/* Bank Guarantee */}
-            <div className="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
-              <div className="p-4 border-b border-slate-100">
+            <div
+              className="bg-white rounded-2xl border border-slate-200 shadow-md overflow-hidden w-full md:w-64 md:ml-[-20px] md:mt-6"
+              style={{ transform: 'rotate(2.5deg)', position: 'relative', zIndex: 1 }}
+            >
+              <div className="p-3 border-b border-slate-100">
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-blue-500" />
-                  <span className="text-xs font-semibold text-slate-500 uppercase tracking-wide">
+                  <div className="w-2 h-2 rounded-full bg-blue-500 flex-shrink-0" />
+                  <span className="text-xs font-semibold text-slate-500 uppercase tracking-wide leading-tight">
                     {locale === 'ka' ? 'ALDAGI — საბანკო გარანტია 50,000 ₾' :
                      locale === 'ru' ? 'ALDAGI — банковская гарантия 50 000 ₾' :
                      'ALDAGI — Bank Guarantee 50,000 GEL'}
                   </span>
                 </div>
               </div>
-              <div className="select-none" style={{ pointerEvents: 'none' }}>
+              <div className="relative select-none" style={{ pointerEvents: 'none' }}>
                 <Image
                   src="/trust-bank-guarantee.jpg"
                   alt="ALDAGI Bank Guarantee 50,000 GEL – Work Visa Georgia"
-                  width={600}
-                  height={430}
+                  width={400}
+                  height={286}
                   className="w-full h-auto"
+                  style={{ filter: 'blur(2px)' }}
                   draggable={false}
                 />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span
+                    className="text-[#0f2557] font-black text-2xl tracking-widest select-none"
+                    style={{ opacity: 0.18, transform: 'rotate(-25deg)', whiteSpace: 'nowrap' }}
+                  >
+                    WVG.GE
+                  </span>
+                </div>
               </div>
             </div>
           </div>
