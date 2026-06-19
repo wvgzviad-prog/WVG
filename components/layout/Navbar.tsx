@@ -66,7 +66,7 @@ export default function Navbar() {
 
           {/* Logo */}
           <Link href={`/${locale}`} className="flex items-center gap-2.5 flex-shrink-0">
-            <img src="/logo.svg" alt="Work Visa Georgia" className="w-9 h-9 rounded-full" />
+            <img src="/logo.png" alt="Work Visa Georgia" className="w-9 h-9 rounded-full" />
             <div className="hidden sm:block leading-none">
               <div className="font-bold text-[#0f2557] text-[13px] tracking-tight">Work Visa</div>
               <div className="text-[11px] font-semibold" style={{ color: '#c9a84c' }}>Georgia</div>
