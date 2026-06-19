@@ -12,10 +12,10 @@
     "registerBtn": "Start Registration"
   },
   "hero": {
-    "badge": "200+ successful placements",
-    "title": "Legal Employment Abroad",
-    "subtitle": "Israel • Europe • International Employers",
-    "description": "WVG helps you find legal employment, prepare all required documents, and depart for work abroad.",
+    "badge": "120+ candidates employed in Israel",
+    "title": "Legal Employment in Israel",
+    "subtitle": "Israel — Construction · Industrial · Service Sectors",
+    "description": "Work Visa Georgia helps Georgian citizens find legal employment in Israel — from registration and documentation to employer presentation and departure.\n\nOur team provides organised administrative support to candidates at every stage of the employment process.",
     "ctaRegister": "Submit Application",
     "ctaVacancies": "View Vacancies",
     "stats": {
@@ -23,23 +23,39 @@
       "countries": "Countries",
       "years": "Years Experience",
       "employers": "Partner Employers",
-      "since": "[PENDING TRANSLATION — see ka.json]",
-      "partners": "[PENDING TRANSLATION — see ka.json]",
-      "days": "[PENDING TRANSLATION — see ka.json]",
-      "capacity": "[PENDING TRANSLATION — see ka.json]"
+      "since": "International recruitment since 2024",
+      "partners": "Up to 10 active partner companies in Israel",
+      "days": "Average process — 60 days",
+      "capacity": "Managing up to 50 candidates simultaneously"
     }
   },
   "process": {
     "title": "How the Process Works",
-    "subtitle": "5 simple steps to employment",
+    "subtitle": "6 stages — from registration to departure",
     "steps": {
       "register": {
         "title": "Registration",
-        "desc": "Fill in the online form and submit your application"
+        "desc": "The candidate fills in an online application or contacts our team for an initial consultation."
+      },
+      "screening": {
+        "title": "Initial Screening",
+        "desc": "We assess the candidate's profession, experience, contact details and suitability for the current programme."
       },
       "docs": {
-        "title": "Document Verification",
-        "desc": "Our team verifies your documents"
+        "title": "Document Preparation",
+        "desc": "The candidate prepares the required documents; our team provides full administrative coordination."
+      },
+      "presentation": {
+        "title": "Employer Presentation",
+        "desc": "After verifying documents and the professional profile, the candidate is submitted to the relevant employer."
+      },
+      "decision": {
+        "title": "Employer Decision",
+        "desc": "The final decision is made by the employer and the relevant state authorities."
+      },
+      "departure": {
+        "title": "Departure",
+        "desc": "After approval the candidate receives all necessary departure information and begins employment in Israel."
       },
       "interview": {
         "title": "Interview",
@@ -47,29 +63,13 @@
       },
       "approval": {
         "title": "Employer Approval",
-        "desc": "Employer confirms your candidacy"
-      },
-      "departure": {
-        "title": "Departure",
-        "desc": "Prepare for work and depart"
-      },
-      "screening": {
-        "title": "[PENDING TRANSLATION — see ka.json]",
-        "desc": "[PENDING TRANSLATION — see ka.json]"
-      },
-      "presentation": {
-        "title": "[PENDING TRANSLATION — see ka.json]",
-        "desc": "[PENDING TRANSLATION — see ka.json]"
-      },
-      "decision": {
-        "title": "[PENDING TRANSLATION — see ka.json]",
-        "desc": "[PENDING TRANSLATION — see ka.json]"
+        "desc": "Employer confirms the candidacy"
       }
     }
   },
   "vacancies": {
     "title": "Active Vacancies",
-    "subtitle": "Find the right job for you",
+    "subtitle": "Work Visa Georgia regularly receives requests from partner companies in Israel.",
     "viewAll": "View All Vacancies",
     "apply": "Apply Now",
     "salary": "Salary",
@@ -77,115 +77,163 @@
     "schedule": "Schedule",
     "accommodation": "Accommodation",
     "experience": "Experience",
+    "notListed": "If your profession is not listed, you can still register. Your details will be kept on file and our team will contact you when a suitable opportunity arises.",
+    "topDemand": "Most in-demand roles:",
     "filters": {
       "all": "All",
       "country": "Country",
       "profession": "Profession",
       "salary": "Salary"
     },
-    "notListed": "[PENDING TRANSLATION — see ka.json]",
-    "topDemand": "[PENDING TRANSLATION — see ka.json]",
     "professions": [
-      "[PENDING TRANSLATION — see ka.json]",
-      "[PENDING TRANSLATION — see ka.json]",
-      "[PENDING TRANSLATION — see ka.json]",
-      "[PENDING TRANSLATION — see ka.json]",
-      "[PENDING TRANSLATION — see ka.json]",
-      "[PENDING TRANSLATION — see ka.json]",
-      "[PENDING TRANSLATION — see ka.json]"
+      "Construction Specialists",
+      "Welders",
+      "Plumbers",
+      "Food Industry Specialists",
+      "Caregivers",
+      "Nannies",
+      "Cleaners"
     ]
   },
   "about": {
     "title": "About Work Visa Georgia",
-    "subtitle": "Georgia's leading work visa agency",
-    "mission": {
-      "title": "Our Mission",
-      "text": "WVG's mission is to find legally secured, safe and dignified employment opportunities abroad for Georgian workers. We operate on the principles of transparency, honesty and professionalism."
-    },
-    "experience": {
-      "title": "Experience",
-      "text": "WVG has 200+ successful placements in Israel and other countries. We work with trusted, legal employers and comply with all requirements of Georgian labor law."
-    },
-    "whyUs": {
-      "title": "Why WVG?",
-      "items": [
-        "Licensed agency",
-        "Transparent process",
-        "200+ successful placements",
-        "Direct connections with Israeli employers",
-        "Full document support",
-        "Individual candidate service",
-        "[PENDING TRANSLATION — see ka.json]"
-      ]
-    },
-    "intro": "[PENDING TRANSLATION — see ka.json]",
-    "specializationTitle": "[PENDING TRANSLATION — see ka.json]",
-    "specializationText": "[PENDING TRANSLATION — see ka.json]",
+    "subtitle": "International employment agency licensed by Georgia's Ministry of Labour",
+    "intro": "Work Visa Georgia (WVG) is an international employment agency licensed by Georgia's Ministry of Labour, specialising in the selection, preparation and presentation of Georgian candidates to foreign employers.\n\nThe company was founded in 2024 and its primary area of activity is the legal employment of Georgian citizens in Israel.\n\nWork Visa Georgia's goal is to organise the international employment process to professional, transparent and legally sound standards — for both candidates and foreign partner companies.\n\nTo date, over 120 Georgian citizens have found employment in Israel with our assistance. The majority of our candidates work in the construction and industrial sectors, where professional skills, responsibility and reliability are of particular importance.",
+    "specializationTitle": "Our Specialisation",
+    "specializationText": "Work Visa Georgia is fully focused on the Israeli labour market.\n\nOur accumulated practical experience, partner relationships and systematic recruitment process give us the ability to offer candidates real employment opportunities and employers pre-selected, verified staff.",
     "construction": {
-      "title": "[PENDING TRANSLATION — see ka.json]",
+      "title": "Construction Sector",
       "items": [
-        "[PENDING TRANSLATION — see ka.json]",
-        "[PENDING TRANSLATION — see ka.json]",
-        "[PENDING TRANSLATION — see ka.json]",
-        "[PENDING TRANSLATION — see ka.json]",
-        "[PENDING TRANSLATION — see ka.json]",
-        "[PENDING TRANSLATION — see ka.json]",
-        "[PENDING TRANSLATION — see ka.json]",
-        "[PENDING TRANSLATION — see ka.json]",
-        "[PENDING TRANSLATION — see ka.json]"
+        "Reinforcement specialists",
+        "Formwork specialists",
+        "Concrete workers",
+        "Masonry specialists",
+        "Facade workers",
+        "Welders",
+        "Metal structure specialists",
+        "Tile layers",
+        "Multi-skilled construction workers"
       ]
     },
     "industrial": {
-      "title": "[PENDING TRANSLATION — see ka.json]",
+      "title": "Industrial Sector",
       "items": [
-        "[PENDING TRANSLATION — see ka.json]",
-        "[PENDING TRANSLATION — see ka.json]",
-        "[PENDING TRANSLATION — see ka.json]",
-        "[PENDING TRANSLATION — see ka.json]",
-        "[PENDING TRANSLATION — see ka.json]",
-        "[PENDING TRANSLATION — see ka.json]",
-        "[PENDING TRANSLATION — see ka.json]"
+        "Welders",
+        "Metallurgy production specialists",
+        "Production line workers",
+        "Warehouse workers",
+        "Furniture factory workers",
+        "Food industry specialists",
+        "Technical operators"
       ]
     },
     "other": {
-      "title": "[PENDING TRANSLATION — see ka.json]",
+      "title": "Other Sectors",
       "items": [
-        "[PENDING TRANSLATION — see ka.json]",
-        "[PENDING TRANSLATION — see ka.json]",
-        "[PENDING TRANSLATION — see ka.json]",
-        "[PENDING TRANSLATION — see ka.json]",
-        "[PENDING TRANSLATION — see ka.json]"
+        "Plumbers",
+        "Food industry specialists",
+        "Caregivers",
+        "Nannies",
+        "Cleaners"
       ]
     },
-    "selectionTitle": "[PENDING TRANSLATION — see ka.json]",
-    "selectionText": "[PENDING TRANSLATION — see ka.json]",
-    "partnersTitle": "[PENDING TRANSLATION — see ka.json]",
-    "partnersText": "[PENDING TRANSLATION — see ka.json]",
+    "selectionTitle": "Candidate Selection System",
+    "selectionText": "Work Visa Georgia uses a multi-stage selection and verification system.\n\nAfter registration, each candidate goes through an initial assessment stage during which their professional experience, contact details and suitability for the specific programme requirements are verified.\n\nThe next stage involves the preparation and checking of documentation.\n\nIf required, candidates undergo additional professional assessment, an interview or a practical skills check.\n\nThe final decision on accepting a candidate is always made by the foreign employer.\n\nWork Visa Georgia does not make the final employment decision and does not provide employment guarantees.",
+    "partnersTitle": "Our Partners",
+    "partnersText": "Today Work Visa Georgia works with approximately 10 active partner companies in Israel.\n\nOur partners operate in various sectors, including:",
     "partnerSectors": [
-      "[PENDING TRANSLATION — see ka.json]",
-      "[PENDING TRANSLATION — see ka.json]",
-      "[PENDING TRANSLATION — see ka.json]",
-      "[PENDING TRANSLATION — see ka.json]"
+      "Construction",
+      "Industrial production",
+      "Infrastructure projects",
+      "Specialised technical services"
     ],
-    "approachTitle": "[PENDING TRANSLATION — see ka.json]",
-    "approachIntro": "[PENDING TRANSLATION — see ka.json]",
+    "approachTitle": "Our Approach",
+    "approachIntro": "We believe that international employment should be:",
     "approachValues": [
-      "[PENDING TRANSLATION — see ka.json]",
-      "[PENDING TRANSLATION — see ka.json]",
-      "[PENDING TRANSLATION — see ka.json]",
-      "[PENDING TRANSLATION — see ka.json]"
+      "Legal",
+      "Transparent",
+      "Organised",
+      "Professionally managed"
     ],
-    "approachText": "[PENDING TRANSLATION — see ka.json]",
-    "contactTitle": "[PENDING TRANSLATION — see ka.json]",
+    "approachText": "That is why we approach each candidate individually and support them from registration to departure.\n\nWork Visa Georgia's work does not end after the candidate's departure. We continue communicating with employed workers and, where possible, assist them in adapting and resolving organisational matters.",
+    "contactTitle": "Contact Information",
     "contactInfo": {
-      "company": "[PENDING TRANSLATION — see ka.json]",
-      "legal": "[PENDING TRANSLATION — see ka.json]",
-      "id": "[PENDING TRANSLATION — see ka.json]",
-      "address": "[PENDING TRANSLATION — see ka.json]",
-      "phone": "[PENDING TRANSLATION — see ka.json]",
-      "email": "[PENDING TRANSLATION — see ka.json]",
-      "website": "[PENDING TRANSLATION — see ka.json]"
-    }
+      "company": "Work Visa Georgia",
+      "legal": "LLC Work Visa Georgia",
+      "id": "Identification code: 438124450",
+      "address": "Tbilisi, 10 Navtlughi Street, Building C, Entrance 3, Floor 1, Office 29A",
+      "phone": "+995 591 888 774",
+      "email": "wvg.zviad@gmail.com",
+      "website": "www.wvg.ge"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "text": "The legal employment of Georgian citizens in Israel — to professional, transparent and legally sound standards."
+    },
+    "experience": {
+      "title": "Experience",
+      "text": "Since 2024, Work Visa Georgia has assisted over 120 candidates in finding employment in Israel. The majority of our candidates are employed in the construction sector."
+    },
+    "whyUs": {
+      "title": "Why Work Visa Georgia?",
+      "items": [
+        "Licensed by Georgia's Ministry of Labour",
+        "Operating since 2024",
+        "Over 120 candidates employed in Israel",
+        "Approximately 10 active partner companies",
+        "Full administrative support",
+        "Georgian coordinator support in Israel",
+        "Recommended by candidates and partner companies"
+      ]
+    },
+    "selectionTitle2": "Contact",
+    "approachTitle2": "Approach"
+  },
+  "whyWvg": {
+    "title": "Why Work Visa Georgia?",
+    "intro": "Work Visa Georgia is an international employment agency licensed by Georgia's Ministry of Labour, specialising in organising the legal employment process in Israel.\n\nOur main goal is to provide the candidate with a transparent, organised and professional service, and the employer with a pre-selected, verified and prepared worker.",
+    "sections": [
+      {
+        "title": "Officially Licensed Agency",
+        "text": "Work Visa Georgia holds an official licence issued by Georgia's Ministry of Labour and operates in full compliance with Georgian legislation.\n\nThis means our work is not a random or unorganised process. The company operates within an official legal framework and manages its relationship with candidates in a documented, transparent and responsible manner."
+      },
+      {
+        "title": "Specialisation in Israel",
+        "text": "Our primary and priority direction is Israel.\n\nWork Visa Georgia does not attempt to work superficially across many countries simultaneously. Our practical experience, partner network and processes are primarily tailored to the Israeli labour market.\n\nThis allows us to better understand employer requirements, candidate preparation standards, documentation specifics and the stages a candidate actually needs to go through."
+      },
+      {
+        "title": "Real Experience",
+        "text": "Since 2024, Work Visa Georgia has already assisted over 120 candidates in finding employment in Israel.\n\nThe majority of these candidates are employed in the construction sector, with some in industrial directions.\n\nFor us, this is not just a number. This represents real experience, real processes, real candidates and real responsibility — both to the employed individuals and to the employing companies."
+      },
+      {
+        "title": "International Partners",
+        "text": "Work Visa Georgia works with approximately 10 active partner companies in Israel.\n\nOur partners operate in the construction, industrial and service sectors. Our task is to provide each employer with candidates who best match the specific project's needs."
+      },
+      {
+        "title": "Full Support",
+        "text": "Our support does not end with registration.\n\nWork Visa Georgia helps the candidate with:",
+        "bullets": [
+          "Going through the registration process",
+          "Organising professional information",
+          "The document preparation process",
+          "Employer presentation",
+          "Receiving pre-departure information",
+          "Communication and adaptation after arriving in Israel, where possible"
+        ]
+      },
+      {
+        "title": "Candidate Accountability System",
+        "text": "One of Work Visa Georgia's important advantages is its candidate accountability system.\n\nThe company uses legal and administrative mechanisms that help ensure candidates take the process seriously, do not abandon agreed commitments and approach both the employer and the agency responsibly.\n\nThis is particularly important in the international recruitment sector, where one of the main risks for employers is a candidate refusing to depart or arbitrarily leaving work."
+      },
+      {
+        "title": "Georgian Coordinator Support in Israel",
+        "text": "Work Visa Georgia has a Georgian coordinator in Israel who, where possible, assists both candidates and employers with communication and organisational matters.\n\nThis support is particularly important at the initial stage of the candidate's arrival, when adaptation to the new environment, work process and employer takes place."
+      },
+      {
+        "title": "Why Do Candidates Recommend Us?",
+        "text": "Many new candidates contact Work Visa Georgia on the basis of a recommendation from a friend, relative or already-employed worker.\n\nFor us, this is the highest form of trust.\n\nWhen someone already employed in Israel sends a new candidate to us, it means they consider our process, communication and support to be reliable."
+      }
+    ]
   },
   "registration": {
     "title": "Submit Your Application",
@@ -222,8 +270,6 @@
     ],
     "countries": [
       "Israel",
-      "Germany",
-      "Poland",
       "Other"
     ]
   },
@@ -288,8 +334,10 @@
     "intro": "Work Visa Georgia helps candidates through every stage of the legal employment process in Israel — from initial registration to departure.",
     "duration": {
       "title": "How long does the process take?",
-      "text": "In most cases, the process from registration to departure takes approximately 60 days on average. However, specific timelines may vary depending on the program, profession, and employer requirements."
+      "text": "In most cases, the process from registration to departure takes approximately 60 days on average. However, specific timelines may vary depending on the programme, profession, and employer requirements."
     },
+    "ctaTitle": "Ready to start the employment process?",
+    "ctaText": "Fill in the registration form and our team will contact you for an initial consultation.",
     "steps": [
       {
         "title": "Registration",
@@ -303,7 +351,7 @@
       },
       {
         "title": "Document Preparation",
-        "desc": "According to the relevant program, the candidate prepares the required documents. Work Visa Georgia provides full administrative support throughout the documentation process.",
+        "desc": "According to the relevant programme, the candidate prepares the required documents. Work Visa Georgia provides full administrative support throughout the documentation process.",
         "bullets": [
           "Passport",
           "Identity card",
@@ -356,12 +404,10 @@
       },
       {
         "title": "Post-Departure Support",
-        "desc": "Work Visa Georgia continues communicating with candidates and, where possible, assists them in resolving administrative and organizational matters.",
+        "desc": "Work Visa Georgia continues communicating with candidates and, where possible, assists them in resolving administrative and organisational matters.",
         "bullets": []
       }
-    ],
-    "ctaTitle": "[PENDING TRANSLATION — see ka.json]",
-    "ctaText": "[PENDING TRANSLATION — see ka.json]"
+    ]
   },
   "faq": {
     "title": "Frequently Asked Questions",
@@ -377,7 +423,7 @@
       },
       {
         "q": "How long does the process take?",
-        "a": "On average 4-8 weeks from application to departure, depending on documents and vacancies."
+        "a": "On average 4–8 weeks from application to departure, depending on documents and vacancies."
       },
       {
         "q": "Is work experience required?",
@@ -397,7 +443,7 @@
       },
       {
         "q": "When will I know if I'm approved?",
-        "a": "Employer decision usually comes within 1-2 weeks after the interview."
+        "a": "Employer decision usually comes within 1–2 weeks after the interview."
       },
       {
         "q": "Can I apply for Israel if I worked there before?",
@@ -405,98 +451,98 @@
       },
       {
         "q": "How do I contact WVG?",
-        "a": "WhatsApp, phone, email or contact form. We work Mon-Fri 9:00-18:00."
+        "a": "WhatsApp, phone, email or contact form. We work Mon–Fri 9:00–18:00."
       },
       {
-        "q": "[PENDING TRANSLATION — see ka.json]",
-        "a": "[PENDING TRANSLATION — see ka.json]"
+        "q": "Is a valid passport required?",
+        "a": "A valid passport is mandatory before departure.\n\nRegistration can begin in parallel with the process of renewing or obtaining a passport.\n\nIf the candidate is positively reviewed by the employer, they can obtain or renew their passport during the ongoing process."
       },
       {
-        "q": "[PENDING TRANSLATION — see ka.json]",
-        "a": "[PENDING TRANSLATION — see ka.json]"
+        "q": "What documents will I need?",
+        "a": "The list of documents depends on the programme, but typically includes:\n\nPassport, ID card, criminal record certificate, medical certificate, work experience supporting documents, references, work video, and other additionally requested documents.\n\nThe full list of documents will be provided to the candidate based on the specific programme and employer requirements."
       },
       {
-        "q": "[PENDING TRANSLATION — see ka.json]",
-        "a": "[PENDING TRANSLATION — see ka.json]"
+        "q": "Why is a work video required?",
+        "a": "A work video is an important part of the candidate assessment process.\n\nThe video helps the employer to pre-assess the candidate's professional skills and real work experience.\n\nFor specialists, a work video is particularly important as it reduces the risk of inaccurate information or overstated experience."
       },
       {
-        "q": "[PENDING TRANSLATION — see ka.json]",
-        "a": "[PENDING TRANSLATION — see ka.json]"
+        "q": "Is having health problems an issue?",
+        "a": "Yes. Certain health problems may not meet programme requirements.\n\nA candidate's health condition may become grounds for exclusion from the process if it prevents the performance of work or does not meet the specific programme requirements.\n\nEach case is considered individually."
       },
       {
-        "q": "[PENDING TRANSLATION — see ka.json]",
-        "a": "[PENDING TRANSLATION — see ka.json]"
+        "q": "Can I participate if I have a criminal record?",
+        "a": "No. The existence of a criminal record is grounds for exclusion.\n\nThe candidate must present the relevant certificate if required within the specific programme."
       },
       {
-        "q": "[PENDING TRANSLATION — see ka.json]",
-        "a": "[PENDING TRANSLATION — see ka.json]"
+        "q": "Is military service required?",
+        "a": "No. Completion of military service is not a requirement.\n\nThis is not a mandatory condition for participation in the employment process in Israel."
       },
       {
-        "q": "[PENDING TRANSLATION — see ka.json]",
-        "a": "[PENDING TRANSLATION — see ka.json]"
+        "q": "Do tattoos or piercings cause problems?",
+        "a": "No. Tattoos or piercings do not affect the employment process.\n\nWhat matters is the candidate's professional suitability, health condition, documentation and compliance with the employer's requirements."
       },
       {
-        "q": "[PENDING TRANSLATION — see ka.json]",
-        "a": "[PENDING TRANSLATION — see ka.json]"
+        "q": "Is it necessary to have previously worked in Israel?",
+        "a": "No. A lack of work experience in Israel is not an obstacle.\n\nCandidates are assessed based on their professional experience, skills and the specific vacancy requirements."
       },
       {
-        "q": "[PENDING TRANSLATION — see ka.json]",
-        "a": "[PENDING TRANSLATION — see ka.json]"
+        "q": "What if I previously had undesirable guest status in Israel?",
+        "a": "Such candidates do not participate in the programme.\n\nIf a candidate has a legal or immigration status that prevents legal employment in Israel, their application cannot be reviewed."
       },
       {
-        "q": "[PENDING TRANSLATION — see ka.json]",
-        "a": "[PENDING TRANSLATION — see ka.json]"
+        "q": "I am already in Israel. Can you help?",
+        "a": "No. Work Visa Georgia only works on programmes for departure from Georgia to Israel.\n\nThe company does not handle legalisation or local employment matters for people already in Israel."
       },
       {
-        "q": "[PENDING TRANSLATION — see ka.json]",
-        "a": "[PENDING TRANSLATION — see ka.json]"
+        "q": "Can I register on a friend or relative's recommendation?",
+        "a": "Yes. Many candidates contact Work Visa Georgia on the basis of a recommendation.\n\nIf your friend, relative or acquaintance has already worked with our company, you can contact us with their recommendation."
       },
       {
-        "q": "[PENDING TRANSLATION — see ka.json]",
-        "a": "[PENDING TRANSLATION — see ka.json]"
+        "q": "Can I register from abroad?",
+        "a": "Yes. Registration is possible from both Georgia and abroad.\n\nHowever, the process is ultimately linked to the programme of departure from Georgia to Israel and the preparation of required documents."
       },
       {
-        "q": "[PENDING TRANSLATION — see ka.json]",
-        "a": "[PENDING TRANSLATION — see ka.json]"
+        "q": "Can I apply for several vacancies at once?",
+        "a": "Yes. Candidates can express interest in several vacancies.\n\nUltimately, our team and the employer will assess which position best suits the candidate's experience and skills."
       },
       {
-        "q": "[PENDING TRANSLATION — see ka.json]",
-        "a": "[PENDING TRANSLATION — see ka.json]"
+        "q": "Can I also be registered with another agency?",
+        "a": "No. Active registration with another agency during the same period is not permitted.\n\nThis is necessary for the integrity of the process, correct communication with the employer and to avoid duplication of candidate data."
       },
       {
-        "q": "[PENDING TRANSLATION — see ka.json]",
-        "a": "[PENDING TRANSLATION — see ka.json]"
+        "q": "The employer declined. Is the process over?",
+        "a": "No. An employer's rejection does not automatically mean the process is over.\n\nIf the candidate's profile matches another current requirement, they may be presented to another employer."
       },
       {
-        "q": "[PENDING TRANSLATION — see ka.json]",
-        "a": "[PENDING TRANSLATION — see ka.json]"
+        "q": "Who makes the final decision?",
+        "a": "The final decision is always made by the foreign employer and the relevant state authorities.\n\nWork Visa Georgia ensures the candidate's preparation, presentation and administrative coordination, but does not make the final employment decision."
       },
       {
-        "q": "[PENDING TRANSLATION — see ka.json]",
-        "a": "[PENDING TRANSLATION — see ka.json]"
+        "q": "Does Work Visa Georgia guarantee employment?",
+        "a": "No. Work Visa Georgia does not guarantee employment, a visa, a work permit or departure on a specific date.\n\nThe company ensures the recruitment, administrative support and coordination process, but final decisions depend on the employer and relevant state authorities."
       },
       {
-        "q": "[PENDING TRANSLATION — see ka.json]",
-        "a": "[PENDING TRANSLATION — see ka.json]"
+        "q": "How long does the process take?",
+        "a": "In most cases, the process from registration to departure takes approximately 60 days on average.\n\nHowever, timelines may vary depending on the programme, employer requirements, document readiness and state procedures."
       },
       {
-        "q": "[PENDING TRANSLATION — see ka.json]",
-        "a": "[PENDING TRANSLATION — see ka.json]"
+        "q": "What happens after approval?",
+        "a": "After approval, the relevant administrative and legal procedures begin.\n\nThis may include the preparation of additional documents, final confirmation from the employer, state authority procedures and departure organisation."
       },
       {
-        "q": "[PENDING TRANSLATION — see ka.json]",
-        "a": "[PENDING TRANSLATION — see ka.json]"
+        "q": "Will you help me after departure?",
+        "a": "Yes. Work Visa Georgia continues communicating with candidates and, where possible, assists them in resolving administrative and organisational matters.\n\nA local coordinator in Israel assists both candidates and employers with communication and adaptation matters."
       },
       {
-        "q": "[PENDING TRANSLATION — see ka.json]",
-        "a": "[PENDING TRANSLATION — see ka.json]"
+        "q": "Are the financial terms publicly available?",
+        "a": "No. The terms of service and financial matters are not published publicly.\n\nThey are determined on the basis of the specific programme, country, employer requirements and the contract concluded with the candidate.\n\nDetailed information is provided to the candidate at the individual consultation and contract stage."
       }
     ]
   },
   "partners": {
     "title": "For Employers",
     "subtitle": "Find Georgian workforce for your business",
-    "description": "WVG offers recruitment of experienced, hardworking Georgian workers in construction, industrial and other sectors.",
+    "description": "WVG offers recruitment of pre-selected, verified Georgian candidates in the construction, industrial and other sectors.",
     "categories": [
       "Construction Workers",
       "Welders",
@@ -540,67 +586,21 @@
     "social": "Social Media"
   },
   "testimonials": {
-    "title": "What Our Clients Say",
-    "subtitle": "200+ people already trust us"
+    "title": "Our Candidates",
+    "subtitle": "120+ candidates employed in Israel"
   },
   "trustSignals": [
-    "[PENDING TRANSLATION — see ka.json]",
-    "[PENDING TRANSLATION — see ka.json]",
-    "[PENDING TRANSLATION — see ka.json]",
-    "[PENDING TRANSLATION — see ka.json]",
-    "[PENDING TRANSLATION — see ka.json]",
-    "[PENDING TRANSLATION — see ka.json]"
+    "Licensed by Georgia's Ministry of Labour",
+    "Full document and administrative support",
+    "Georgian coordinator support in Israel",
+    "Transparent and organised process",
+    "Professional employer presentation system",
+    "Growing network through candidate referrals"
   ],
   "intro": {
-    "title": "[PENDING TRANSLATION — see ka.json]",
-    "text1": "[PENDING TRANSLATION — see ka.json]",
-    "text2": "[PENDING TRANSLATION — see ka.json]",
-    "text3": "[PENDING TRANSLATION — see ka.json]"
-  },
-  "whyWvg": {
-    "title": "[PENDING TRANSLATION — see ka.json]",
-    "intro": "[PENDING TRANSLATION — see ka.json]",
-    "sections": [
-      {
-        "title": "[PENDING TRANSLATION — see ka.json]",
-        "text": "[PENDING TRANSLATION — see ka.json]"
-      },
-      {
-        "title": "[PENDING TRANSLATION — see ka.json]",
-        "text": "[PENDING TRANSLATION — see ka.json]"
-      },
-      {
-        "title": "[PENDING TRANSLATION — see ka.json]",
-        "text": "[PENDING TRANSLATION — see ka.json]"
-      },
-      {
-        "title": "[PENDING TRANSLATION — see ka.json]",
-        "text": "[PENDING TRANSLATION — see ka.json]"
-      },
-      {
-        "title": "[PENDING TRANSLATION — see ka.json]",
-        "text": "[PENDING TRANSLATION — see ka.json]",
-        "bullets": [
-          "[PENDING TRANSLATION — see ka.json]",
-          "[PENDING TRANSLATION — see ka.json]",
-          "[PENDING TRANSLATION — see ka.json]",
-          "[PENDING TRANSLATION — see ka.json]",
-          "[PENDING TRANSLATION — see ka.json]",
-          "[PENDING TRANSLATION — see ka.json]"
-        ]
-      },
-      {
-        "title": "[PENDING TRANSLATION — see ka.json]",
-        "text": "[PENDING TRANSLATION — see ka.json]"
-      },
-      {
-        "title": "[PENDING TRANSLATION — see ka.json]",
-        "text": "[PENDING TRANSLATION — see ka.json]"
-      },
-      {
-        "title": "[PENDING TRANSLATION — see ka.json]",
-        "text": "[PENDING TRANSLATION — see ka.json]"
-      }
-    ]
+    "title": "Work Visa Georgia",
+    "text1": "Work Visa Georgia is an international employment agency focused on the legal employment of Georgian citizens in Israel.",
+    "text2": "Our activities include candidate selection, professional experience assessment, documentation organisation, employer presentation and pre-departure support.",
+    "text3": "Our main advantage is that we manage the process systematically — the candidate receives clear information from the outset, while the employer receives a pre-verified and prepared candidate."
   }
 }

@@ -24,8 +24,8 @@ export default function PartnersPage() {
       <section className="bg-[#0f2557] py-20">
         <div className="max-w-7xl mx-auto px-4">
           <div className="w-14 h-1 bg-yellow-500 rounded-full mb-4" />
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">{t('partners.title')}</h1>
-          <p className="text-blue-200 text-xl max-w-2xl">{t('partners.subtitle')}</p>
+          <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 break-words">{t('partners.title')}</h1>
+          <p className="text-blue-200 text-lg md:text-xl max-w-2xl">{t('partners.subtitle')}</p>
         </div>
       </section>
 
