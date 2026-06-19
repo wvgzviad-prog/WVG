@@ -1,5 +1,6 @@
 import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
+import Image from 'next/image';
 import { CheckCircle, ArrowRight, MapPin, Phone, Mail, Globe } from 'lucide-react';
 
 export default function AboutPage() {
@@ -31,10 +32,25 @@ export default function AboutPage() {
       {/* ── Intro ── */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="max-w-3xl">
-            {String(a.intro).split('\n\n').map((para, i) => (
-              <p key={i} className="text-slate-700 text-lg leading-relaxed mb-4 last:mb-0">{para}</p>
-            ))}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              {String(a.intro).split('\n\n').map((para, i) => (
+                <p key={i} className="text-slate-700 text-lg leading-relaxed mb-4 last:mb-0">{para}</p>
+              ))}
+            </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-lg border border-slate-100">
+              <Image
+                src="/office-main.jpg"
+                alt="Work Visa Georgia Office – Tbilisi"
+                width={800}
+                height={600}
+                className="w-full h-auto object-cover"
+                draggable={false}
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0f2557]/80 to-transparent px-5 py-4">
+                <p className="text-white text-sm font-medium">Work Visa Georgia Office – Tbilisi</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -150,6 +166,71 @@ export default function AboutPage() {
                 <span className="text-slate-700 font-medium text-sm leading-relaxed">{item}</span>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Licenses & Trust Documents ── */}
+      <section className="py-16" style={{ background: '#f8fafc' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="w-12 h-1 rounded-full mb-5" style={{ background: '#c9a84c' }} />
+          <h2 className="text-2xl md:text-3xl font-black text-[#0f2557] tracking-tight mb-3">
+            {locale === 'ka' ? 'ლიცენზიები, რეგისტრაცია და ფინანსური გარანტია' :
+             locale === 'ru' ? 'Лицензии, регистрация и финансовые гарантии' :
+             'Licenses, Registration & Financial Guarantees'}
+          </h2>
+          <p className="text-slate-600 mb-8 max-w-2xl">
+            {locale === 'ka' ? 'WVG ოფიციალურად ლიცენზირებულია საქართველოს შრომის, ჯანმრთელობისა და სოციალური დაცვის სამინისტროს მიერ და ფლობს 50,000 ლარის საბანკო გარანტიას.' :
+             locale === 'ru' ? 'WVG официально лицензирована Министерством труда, здравоохранения и социальной защиты Грузии и располагает банковской гарантией на 50 000 лари.' :
+             'WVG is officially licensed by the Ministry of Labour, Health and Social Protection of Georgia and holds a 50,000 GEL bank guarantee.'}
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl">
+            {/* Ministry of Labour Certificate */}
+            <div className="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+              <div className="p-4 border-b border-slate-100">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-green-500" />
+                  <span className="text-xs font-semibold text-slate-500 uppercase tracking-wide">
+                    {locale === 'ka' ? 'შრომის სამინისტრო — სერტიფიკატი' :
+                     locale === 'ru' ? 'Министерство труда — сертификат' :
+                     'Ministry of Labour — Certificate'}
+                  </span>
+                </div>
+              </div>
+              <div className="select-none" style={{ pointerEvents: 'none' }}>
+                <Image
+                  src="/trust-certificate-ka.jpg"
+                  alt="Ministry of Labour Certificate – Work Visa Georgia"
+                  width={600}
+                  height={430}
+                  className="w-full h-auto"
+                  draggable={false}
+                />
+              </div>
+            </div>
+            {/* Bank Guarantee */}
+            <div className="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+              <div className="p-4 border-b border-slate-100">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-blue-500" />
+                  <span className="text-xs font-semibold text-slate-500 uppercase tracking-wide">
+                    {locale === 'ka' ? 'ALDAGI — საბანკო გარანტია 50,000 ₾' :
+                     locale === 'ru' ? 'ALDAGI — банковская гарантия 50 000 ₾' :
+                     'ALDAGI — Bank Guarantee 50,000 GEL'}
+                  </span>
+                </div>
+              </div>
+              <div className="select-none" style={{ pointerEvents: 'none' }}>
+                <Image
+                  src="/trust-bank-guarantee.jpg"
+                  alt="ALDAGI Bank Guarantee 50,000 GEL – Work Visa Georgia"
+                  width={600}
+                  height={430}
+                  className="w-full h-auto"
+                  draggable={false}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

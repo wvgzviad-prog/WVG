@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
+import Image from 'next/image';
 import { Phone, Mail, MapPin, MessageCircle, Clock, Send, CheckCircle } from 'lucide-react';
 
 export default function ContactPage() {
@@ -158,19 +159,41 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Map placeholder */}
-      <section className="h-72 bg-slate-200 relative overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center">
-            <MapPin size={32} className="text-slate-400 mx-auto mb-2" />
-            <p className="text-slate-500 font-medium">
-              {locale === 'ka' ? 'Google Maps — თბილისი, საქართველო' :
-               locale === 'ru' ? 'Google Maps — Тбилиси, Грузия' :
-               'Google Maps — Tbilisi, Georgia'}
-            </p>
-            <p className="text-slate-400 text-sm mt-1">Work Visa Georgia — wvg.ge</p>
+      {/* Office photos */}
+      <section className="py-14 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="w-12 h-1 rounded-full mb-5" style={{ background: '#c9a84c' }} />
+          <h2 className="text-xl font-black text-[#0f2557] mb-6">
+            {locale === 'ka' ? 'ჩვენი ოფისი' : locale === 'ru' ? 'Наш офис' : 'Our Office'}
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="relative rounded-2xl overflow-hidden shadow-sm border border-slate-100">
+              <Image src="/office-main.jpg" alt="WVG Office – consultation room" width={600} height={450} className="w-full h-56 object-cover" draggable={false} />
+            </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-sm border border-slate-100">
+              <Image src="/office-docs.jpg" alt="WVG Office – document processing room" width={600} height={450} className="w-full h-56 object-cover" draggable={false} />
+            </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-sm border border-slate-100">
+              <Image src="/building-aerial.jpg" alt="Navtlughi Street 10, Tbilisi – office building" width={600} height={450} className="w-full h-56 object-cover" draggable={false} />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0f2557]/70 to-transparent px-4 py-3">
+                <p className="text-white text-xs font-medium">ნავთლუღის ქ. 10C, თბილისი</p>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
+
+      {/* Google Maps */}
+      <section className="h-80 relative overflow-hidden">
+        <iframe
+          title="Work Visa Georgia office location"
+          src="https://maps.google.com/maps?q=Navtlughi+Street+10,+Tbilisi,+Georgia&output=embed&z=16"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
       </section>
     </div>
   );
