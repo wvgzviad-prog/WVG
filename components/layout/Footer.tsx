@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
 
@@ -26,7 +27,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src="/logo.png" alt="Work Visa Georgia" className="w-12 h-12 rounded-full flex-shrink-0" />
+              <Image src="/logo.png" alt="Work Visa Georgia" width={48} height={48} className="rounded-full flex-shrink-0" />
               <div>
                 <div className="font-bold text-white">Work Visa Georgia</div>
                 <div className="text-blue-300 text-xs">wvg.ge</div>

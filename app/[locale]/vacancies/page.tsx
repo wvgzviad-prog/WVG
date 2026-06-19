@@ -163,6 +163,28 @@ export default function VacanciesPage() {
           )}
         </div>
       </section>
+
+      {/* Not-listed CTA */}
+      <section className="py-14 bg-[#0f2557]">
+        <div className="max-w-3xl mx-auto px-4 text-center">
+          <p className="text-blue-200 text-base mb-2">
+            {locale === 'ka' ? 'შენი პროფესია სიაში არ არის?' :
+             locale === 'ru' ? 'Вашей профессии нет в списке?' :
+             "Don't see your profession listed?"}
+          </p>
+          <h2 className="text-2xl font-bold text-white mb-4">
+            {locale === 'ka' ? 'მაინც გამოაგზავნე განაცხადი — ჩვენ ვიპოვით შენთვის სამუშაოს' :
+             locale === 'ru' ? 'Всё равно подайте заявку — мы подберём вам работу' :
+             'Apply anyway — we will find the right role for you'}
+          </h2>
+          <Link
+            href={`/${locale}/register`}
+            className="inline-flex items-center gap-2 bg-[#c9a84c] text-[#0f2557] font-bold px-8 py-3.5 rounded-xl text-sm hover:bg-yellow-400 transition-colors"
+          >
+            {t('vacancies.apply')} <ArrowRight size={16} />
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

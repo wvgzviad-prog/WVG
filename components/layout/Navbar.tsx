@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useTranslations, useLocale } from 'next-intl';
 import { Menu, X, Globe, Phone, MessageCircle } from 'lucide-react';
@@ -66,7 +67,7 @@ export default function Navbar() {
 
           {/* Logo */}
           <Link href={`/${locale}`} className="flex items-center gap-2.5 flex-shrink-0">
-            <img src="/logo.png" alt="Work Visa Georgia" className="w-9 h-9 rounded-full" />
+            <Image src="/logo.png" alt="Work Visa Georgia" width={36} height={36} className="rounded-full" priority />
             <div className="hidden sm:block leading-none">
               <div className="font-bold text-[#0f2557] text-[13px] tracking-tight">Work Visa</div>
               <div className="text-[11px] font-semibold" style={{ color: '#c9a84c' }}>Georgia</div>
