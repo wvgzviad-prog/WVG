@@ -19,6 +19,13 @@ export interface WorkforceData {
   byCategory: { category: string; count: number }[];
   byProfession: { profession: string; category: string; count: number }[];
   byExperience: { level: string; count: number }[];
+  /** Counts only — no personal data. Remove once sheet data is clean. */
+  _diagnostics: {
+    approvedTotal: number;
+    missingCategory: number;
+    missingProfession: number;
+    missingExperience: number;
+  };
 }
 
 export async function getWorkforceData(): Promise<WorkforceData> {
@@ -32,10 +39,18 @@ export async function getWorkforceData(): Promise<WorkforceData> {
   const byProfessionMap: Record<string, { category: string; count: number }> = {};
   const byExperienceMap: Record<string, number> = {};
 
+  let missingCategory = 0;
+  let missingProfession = 0;
+  let missingExperience = 0;
+
   for (const r of approved) {
     const category   = String(r.fields[COL_CATEGORY]   ?? '').trim();
     const profession = String(r.fields[COL_PROFESSION]  ?? '').trim();
     const experience = String(r.fields[COL_EXPERIENCE]  ?? '').trim();
+
+    if (!category) missingCategory += 1;
+    if (!profession) missingProfession += 1;
+    if (!experience) missingExperience += 1;
 
     // Pre-taxonomy rows have no category — bucket them under 'სხვა' so
     // sum(byCategory) always equals total approved.
@@ -76,5 +91,12 @@ export async function getWorkforceData(): Promise<WorkforceData> {
         .sort(([a], [b]) => a.localeCompare(b))
         .map(([level, count]) => ({ level, count })),
     ],
+
+    _diagnostics: {
+      approvedTotal: approved.length,
+      missingCategory,
+      missingProfession,
+      missingExperience,
+    },
   };
 }
