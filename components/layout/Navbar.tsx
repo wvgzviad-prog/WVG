@@ -32,8 +32,9 @@ export default function Navbar() {
     { href: `/${locale}/documents`,   label: t('documents') },
     { href: `/${locale}/procedure`,   label: t('procedure') },
     { href: `/${locale}/faq`,         label: t('faq') },
-    { href: `/${locale}/partners`,    label: t('partners') },
-    { href: `/${locale}/contact`,     label: t('contact') },
+    { href: `/${locale}/partners`,             label: t('partners') },
+    { href: `/${locale}/employers/workforce`,  label: t('employers') },
+    { href: `/${locale}/contact`,              label: t('contact') },
   ];
 
   const isActive = (href: string) => pathname === href;
