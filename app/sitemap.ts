@@ -12,7 +12,8 @@ const pages: Array<{ path: string; priority: number; changeFrequency: MetadataRo
   { path: '/contact',    priority: 0.7, changeFrequency: 'monthly' },
   { path: '/faq',        priority: 0.7, changeFrequency: 'monthly' },
   { path: '/documents',  priority: 0.7, changeFrequency: 'monthly' },
-  { path: '/partners',   priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/partners',          priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/employers/workforce', priority: 0.7, changeFrequency: 'daily'   },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -8,61 +8,67 @@ export const revalidate = 300;
 
 const COPY = {
   ka: {
-    badge:         'WVG სამუშაო რეესტრი — ისრაელი',
-    title:         'დადასტურებული ქართველი სპეციალისტები ისრაელისთვის',
-    subtitle:      'მხოლოდ ის კანდიდატები, რომლებიც Work Visa Georgia-მ გადაამოწმა და დამსაქმებლებისთვის დაამტკიცა.',
-    verified:      'დადასტურებულია Work Visa Georgia-ს მიერ',
-    totalLabel:    'დამტკიცებული კანდიდატი',
-    catsLabel:     'პროფესიული კატეგორია',
-    profsLabel:    'სტრუქტურირებული პროფესია',
-    updated:       'მონაცემები განახლდება ყოველ 5 წუთში.',
-    catTitle:      'პროფესიული კატეგორიები',
-    profTitle:     'პოპულარული პროფესიები',
-    profHeader:    ['პროფესია', 'კატეგორია', 'კანდიდატი'],
-    expTitle:      'გამოცდილების დონე',
-    ctaTitle:      'გჭირდებათ ქართველი სპეციალისტები თქვენი პროექტისთვის ისრაელში?',
-    ctaBody:       'მოგვწერეთ მოთხოვნილი პროფესია, რაოდენობა და დაწყების სავარაუდო თარიღი.',
-    ctaBtn:        'დაგვიკავშირდით',
-    whatsapp:      'WhatsApp',
-    candidates:    'კანდიდატი',
+    badge:            'WVG სამუშაო რეესტრი — ისრაელი',
+    title:            'დადასტურებული ქართველი სპეციალისტები ისრაელისთვის',
+    subtitle:         'მხოლოდ ის კანდიდატები, რომლებიც Work Visa Georgia-მ გადაამოწმა და დამსაქმებლებისთვის დაამტკიცა.',
+    verified:         'დადასტურებულია Work Visa Georgia-ს მიერ',
+    totalLabel:       'დამტკიცებული კანდიდატი',
+    catsLabel:        'პროფესიული კატეგორია',
+    profsLabel:       'სტრუქტურირებული პროფესია',
+    updated:          'მონაცემები განახლდება ყოველ 5 წუთში.',
+    catTitle:         'პროფესიული კატეგორიები',
+    profTitle:        'პოპულარული პროფესიები',
+    profHeader:       ['პროფესია', 'კატეგორია', 'კანდიდატი'],
+    expTitle:         'გამოცდილების დონე',
+    ctaTitle:         'გჭირდებათ ქართველი სპეციალისტები თქვენი პროექტისთვის ისრაელში?',
+    ctaBody:          'მოგვწერეთ მოთხოვნილი პროფესია, რაოდენობა და დაწყების სავარაუდო თარიღი.',
+    ctaBtn:           'დაგვიკავშირდით',
+    whatsapp:         'WhatsApp',
+    candidates:       'კანდიდატი',
+    unavailableTitle: 'მონაცემები დროებით მიუწვდომელია',
+    unavailableBody:  'გთხოვთ, სცადოთ მოგვიანებით. მონაცემები ავტომატურად განახლდება.',
   },
   en: {
-    badge:         'WVG Workforce Registry — Israel',
-    title:         'Verified Georgian Workforce for Israel',
-    subtitle:      'Only candidates manually reviewed and approved by Work Visa Georgia for employer presentation.',
-    verified:      'Verified by Work Visa Georgia',
-    totalLabel:    'Approved candidates',
-    catsLabel:     'Profession categories',
-    profsLabel:    'Structured professions',
-    updated:       'Data refreshes every 5 minutes.',
-    catTitle:      'Profession Categories',
-    profTitle:     'Top Available Professions',
-    profHeader:    ['Profession', 'Category', 'Candidates'],
-    expTitle:      'Experience Breakdown',
-    ctaTitle:      'Looking for Georgian specialists for your Israeli project?',
-    ctaBody:       'Send us the required profession, quantity, and expected start date.',
-    ctaBtn:        'Contact WVG',
-    whatsapp:      'WhatsApp',
-    candidates:    'candidates',
+    badge:            'WVG Workforce Registry — Israel',
+    title:            'Verified Georgian Workforce for Israel',
+    subtitle:         'Only candidates manually reviewed and approved by Work Visa Georgia for employer presentation.',
+    verified:         'Verified by Work Visa Georgia',
+    totalLabel:       'Approved candidates',
+    catsLabel:        'Profession categories',
+    profsLabel:       'Structured professions',
+    updated:          'Data refreshes every 5 minutes.',
+    catTitle:         'Profession Categories',
+    profTitle:        'Top Available Professions',
+    profHeader:       ['Profession', 'Category', 'Candidates'],
+    expTitle:         'Experience Breakdown',
+    ctaTitle:         'Looking for Georgian specialists for your Israeli project?',
+    ctaBody:          'Send us the required profession, quantity, and expected start date.',
+    ctaBtn:           'Contact WVG',
+    whatsapp:         'WhatsApp',
+    candidates:       'candidates',
+    unavailableTitle: 'Data temporarily unavailable',
+    unavailableBody:  'Please try again shortly. Data refreshes automatically.',
   },
   ru: {
-    badge:         'Реестр специалистов WVG — Израиль',
-    title:         'Проверенные грузинские специалисты для Израиля',
-    subtitle:      'Только кандидаты, вручную проверенные и одобренные Work Visa Georgia для работодателей.',
-    verified:      'Проверено Work Visa Georgia',
-    totalLabel:    'Утверждённых кандидатов',
-    catsLabel:     'Категорий профессий',
-    profsLabel:    'Структурированных профессий',
-    updated:       'Данные обновляются каждые 5 минут.',
-    catTitle:      'Профессиональные категории',
-    profTitle:     'Топ доступных профессий',
-    profHeader:    ['Профессия', 'Категория', 'Кандидатов'],
-    expTitle:      'Распределение по опыту',
-    ctaTitle:      'Нужны грузинские специалисты для вашего проекта в Израиле?',
-    ctaBody:       'Сообщите профессию, количество и предполагаемую дату начала.',
-    ctaBtn:        'Связаться с WVG',
-    whatsapp:      'WhatsApp',
-    candidates:    'кандидатов',
+    badge:            'Реестр специалистов WVG — Израиль',
+    title:            'Проверенные грузинские специалисты для Израиля',
+    subtitle:         'Только кандидаты, вручную проверенные и одобренные Work Visa Georgia для работодателей.',
+    verified:         'Проверено Work Visa Georgia',
+    totalLabel:       'Утверждённых кандидатов',
+    catsLabel:        'Категорий профессий',
+    profsLabel:       'Структурированных профессий',
+    updated:          'Данные обновляются каждые 5 минут.',
+    catTitle:         'Профессиональные категории',
+    profTitle:        'Топ доступных профессий',
+    profHeader:       ['Профессия', 'Категория', 'Кандидатов'],
+    expTitle:         'Распределение по опыту',
+    ctaTitle:         'Нужны грузинские специалисты для вашего проекта в Израиле?',
+    ctaBody:          'Сообщите профессию, количество и предполагаемую дату начала.',
+    ctaBtn:           'Связаться с WVG',
+    whatsapp:         'WhatsApp',
+    candidates:       'кандидатов',
+    unavailableTitle: 'Данные временно недоступны',
+    unavailableBody:  'Пожалуйста, попробуйте позже. Данные обновляются автоматически.',
   },
 } as const;
 
@@ -133,9 +139,14 @@ export default async function WorkforcePage({
 
   if (errorMsg || !data) {
     return (
-      <div style={{ padding: 40, fontFamily: 'monospace' }}>
-        <h2 style={{ color: '#dc2626', marginBottom: 12 }}>Workforce data unavailable</h2>
-        <pre style={{ background: '#fef2f2', border: '1px solid #fca5a5', borderRadius: 8, padding: 16, whiteSpace: 'pre-wrap', fontSize: 13, color: '#7f1d1d' }}>{errorMsg ?? 'Unknown error'}</pre>
+      <div style={{ minHeight: '60vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '60px 24px', textAlign: 'center', fontFamily: "'Inter','Noto Sans Georgian',system-ui,sans-serif" }}>
+        <div style={{ fontSize: 40, marginBottom: 16 }}>📋</div>
+        <h2 style={{ fontSize: 20, fontWeight: 700, color: '#0f2557', marginBottom: 8 }}>
+          {c.unavailableTitle}
+        </h2>
+        <p style={{ fontSize: 15, color: '#64748b', maxWidth: 400, lineHeight: 1.6 }}>
+          {c.unavailableBody}
+        </p>
       </div>
     );
   }
@@ -249,7 +260,8 @@ export default async function WorkforcePage({
               {c.profTitle}
             </h2>
 
-            <div style={{ background: '#f8fafc', borderRadius: 14, overflow: 'hidden', border: '1px solid #e2e8f0' }}>
+            {/* Desktop table */}
+            <div className="hidden md:block" style={{ background: '#f8fafc', borderRadius: 14, overflow: 'hidden', border: '1px solid #e2e8f0' }}>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 100px', padding: '10px 20px', background: '#f1f5f9', borderBottom: '1px solid #e2e8f0' }}>
                 {c.profHeader.map(h => (
                   <span key={h} style={{ fontSize: 11, fontWeight: 700, color: '#64748b', textTransform: 'uppercase', letterSpacing: '.05em' }}>{h}</span>
@@ -273,6 +285,30 @@ export default async function WorkforcePage({
                       </span>
                     </div>
                     <div style={{ fontSize: 18, fontWeight: 800, color: '#0f2557' }}>{count}</div>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* Mobile cards */}
+            <div className="md:hidden" style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+              {data.byProfession.map(({ profession, category, count }, i) => {
+                const color = CATEGORY_COLOR[category] ?? '#64748b';
+                const barPct = Math.round((count / maxProfCount) * 100);
+                return (
+                  <div key={profession} style={{ background: '#fff', border: '1px solid #e2e8f0', borderRadius: 12, padding: '14px 16px', borderLeft: `3px solid ${color}` }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 8 }}>
+                      <div style={{ fontSize: 13, fontWeight: 600, color: '#0f2557', flex: 1, marginRight: 8 }}>{profession}</div>
+                      <div style={{ fontSize: 20, fontWeight: 900, color: '#0f2557' }}>{count}</div>
+                    </div>
+                    <div style={{ marginBottom: 8 }}>
+                      <span style={{ display: 'inline-block', fontSize: 11, fontWeight: 500, color, background: `${color}18`, border: `1px solid ${color}40`, borderRadius: 6, padding: '2px 8px' }}>
+                        {category}
+                      </span>
+                    </div>
+                    <div style={{ height: 3, background: '#e2e8f0', borderRadius: 2 }}>
+                      <div style={{ height: 3, width: `${barPct}%`, background: color, borderRadius: 2 }} />
+                    </div>
                   </div>
                 );
               })}

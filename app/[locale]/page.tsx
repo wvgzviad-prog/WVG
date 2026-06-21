@@ -100,7 +100,7 @@ export default function HomePage() {
             </div>
 
             {/* h1 */}
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.05] tracking-tight mb-4"
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-[1.05] tracking-tight mb-4"
               style={{ fontFamily:"'Noto Sans Georgian','Inter',sans-serif" }}>
               {t('hero.title')}
             </h1>
@@ -389,7 +389,7 @@ export default function HomePage() {
                 style={{ background:'#f8fafc' }}>
                 <Globe size={16} className="text-slate-300" />
                 <span className="text-slate-300 font-bold text-[10px] tracking-wide">
-                  {locale === 'ka' ? `პარტნიორი ${n < 10 ? '0'+n : n}` : `Partner ${n < 10 ? '0'+n : n}`}
+                  {locale === 'ka' ? `პარტნიორი ${n < 10 ? '0'+n : n}` : locale === 'ru' ? `Партнёр ${n < 10 ? '0'+n : n}` : `Partner ${n < 10 ? '0'+n : n}`}
                 </span>
               </div>
             ))}

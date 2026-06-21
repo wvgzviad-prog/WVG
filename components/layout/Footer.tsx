@@ -101,7 +101,7 @@ export default function Footer() {
                 <MapPin size={16} className="text-yellow-400 mt-0.5 flex-shrink-0" />
                 <div>
                   <div className="text-blue-300 text-xs mb-1">{t('contact.address')}</div>
-                  <span className="text-white text-sm">თბილისი, ნავთლუღის ქ. 10, კ. C, ოფისი 29A</span>
+                  <span className="text-white text-sm">{t('footer.address')}</span>
                 </div>
               </div>
             </div>
@@ -110,12 +110,10 @@ export default function Footer() {
           {/* CTA */}
           <div>
             <h3 className="font-semibold text-white mb-4">
-              {locale === 'ka' ? 'მზად ხარ?' : locale === 'ru' ? 'Готовы начать?' : 'Ready to start?'}
+              {t('footer.cta.heading')}
             </h3>
             <p className="text-blue-200 text-sm mb-4">
-              {locale === 'ka' ? 'გამოაგზავნე განაცხადი და ჩვენი გუნდი 24 საათში დაგიკავშირდება.' :
-               locale === 'ru' ? 'Подайте заявку, и наша команда свяжется с вами в течение 24 часов.' :
-               'Submit your application and our team will contact you within 24 hours.'}
+              {t('footer.cta.body')}
             </p>
             <Link
               href={`/${locale}/register`}

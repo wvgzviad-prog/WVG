@@ -43,7 +43,18 @@ export async function middleware(req: NextRequest) {
   }
 
   // ── i18n for public site ───────────────────────────────────────────────────
-  return i18nMiddleware(req);
+  // Run i18n middleware first to handle locale redirects.
+  // For non-redirect responses, inject x-pathname into request headers so
+  // server components (layout.tsx generateMetadata) can build correct hreflang.
+  const i18nResponse = i18nMiddleware(req);
+  const isRedirect = i18nResponse.status === 301 || i18nResponse.status === 302
+    || i18nResponse.status === 307 || i18nResponse.status === 308;
+  if (!isRedirect) {
+    const reqHeaders = new Headers(req.headers);
+    reqHeaders.set('x-pathname', pathname);
+    return NextResponse.next({ request: { headers: reqHeaders } });
+  }
+  return i18nResponse;
 }
 
 export const config = {

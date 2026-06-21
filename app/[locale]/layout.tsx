@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Noto_Sans_Georgian } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
+import { headers } from 'next/headers';
 import "../globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -49,6 +50,11 @@ export async function generateMetadata({
   const safeLocale: Locale = (locale in META) ? (locale as Locale) : 'ka';
   const meta = META[safeLocale];
 
+  // Build per-page hreflang from x-pathname injected by middleware
+  const headersList = await headers();
+  const xPathname = headersList.get('x-pathname') ?? `/${safeLocale}`;
+  const pathSuffix = xPathname.replace(/^\/(ka|en|ru)/, '') || '';
+
   return {
     metadataBase: new URL(SITE_URL),
     title: meta.title,
@@ -61,10 +67,10 @@ export async function generateMetadata({
     ],
     alternates: {
       languages: {
-        'ka':        `${SITE_URL}/ka`,
-        'en':        `${SITE_URL}/en`,
-        'ru':        `${SITE_URL}/ru`,
-        'x-default': `${SITE_URL}/ka`,
+        'ka':        `${SITE_URL}/ka${pathSuffix}`,
+        'en':        `${SITE_URL}/en${pathSuffix}`,
+        'ru':        `${SITE_URL}/ru${pathSuffix}`,
+        'x-default': `${SITE_URL}/ka${pathSuffix}`,
       },
     },
     openGraph: {
@@ -95,26 +101,28 @@ export async function generateMetadata({
   };
 }
 
-const LD_JSON = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: 'Work Visa Georgia',
-  alternateName: 'WVG',
-  url: SITE_URL,
-  logo: `${SITE_URL}/logo.png`,
-  image: `${SITE_URL}/logo.png`,
-  description: META.ka.description,
-  telephone: '+995591888774',
-  email: 'wvg.zviad@gmail.com',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: 'ნავთლუღის ქ. 10, კ. C, ოფისი 29A',
-    addressLocality: 'Tbilisi',
-    addressCountry: 'GE',
-  },
-  areaServed: ['GE', 'IL'],
-  sameAs: ['https://wa.me/995591888774'],
-};
+function getLdJson(locale: Locale) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: 'Work Visa Georgia',
+    alternateName: 'WVG',
+    url: SITE_URL,
+    logo: `${SITE_URL}/logo.png`,
+    image: `${SITE_URL}/logo.png`,
+    description: META[locale].description,
+    telephone: '+995591888774',
+    email: 'wvg.zviad@gmail.com',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'ნავთლუღის ქ. 10, კ. C, ოფისი 29A',
+      addressLocality: 'Tbilisi',
+      addressCountry: 'GE',
+    },
+    areaServed: ['GE', 'IL'],
+    sameAs: ['https://wa.me/995591888774'],
+  };
+}
 
 export default async function LocaleLayout({
   children,
@@ -124,6 +132,7 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const safeLocale: Locale = (locale in META) ? (locale as Locale) : 'ka';
   const messages = await getMessages();
 
   return (
@@ -131,7 +140,7 @@ export default async function LocaleLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(LD_JSON) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(getLdJson(safeLocale)) }}
         />
       </head>
       <body className="bg-white text-slate-800 antialiased">

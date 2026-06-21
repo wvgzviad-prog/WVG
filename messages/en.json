@@ -583,7 +583,13 @@
     "tagline": "Legal employment in Israel",
     "rights": "All rights reserved",
     "links": "Quick Links",
-    "social": "Social Media"
+    "social": "Social Media",
+    "address": "Tbilisi, 10 Navtlughi St., Bldg. C, Office 29A",
+    "partner": "Partner",
+    "cta": {
+      "heading": "Ready to start?",
+      "body": "Submit your application and our team will contact you within 24 hours."
+    }
   },
   "testimonials": {
     "title": "Our Candidates",
