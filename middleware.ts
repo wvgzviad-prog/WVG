@@ -50,6 +50,7 @@ export const config = {
   matcher: [
     '/admin/:path*',
     '/api/admin/:path*',
-    '/((?!_next|_vercel|favicon.ico|.*\\..*).*)',
+    // Exclude _next, static files, and ALL /api/* routes from i18n middleware
+    '/((?!_next|_vercel|favicon.ico|api/|.*\\..*).*)',
   ],
 };

@@ -94,7 +94,23 @@ export default async function WorkforcePage({
   const { locale } = await params;
   const c = COPY[(locale as Locale) in COPY ? (locale as Locale) : 'ka'];
 
-  const data = await getWorkforceData();
+  let data;
+  let errorMsg: string | null = null;
+  try {
+    data = await getWorkforceData();
+  } catch (e) {
+    errorMsg = e instanceof Error ? e.message : String(e);
+  }
+
+  if (errorMsg || !data) {
+    return (
+      <div style={{ padding: 40, fontFamily: 'monospace' }}>
+        <h2 style={{ color: '#dc2626', marginBottom: 12 }}>Workforce data unavailable</h2>
+        <pre style={{ background: '#fef2f2', border: '1px solid #fca5a5', borderRadius: 8, padding: 16, whiteSpace: 'pre-wrap', fontSize: 13, color: '#7f1d1d' }}>{errorMsg ?? 'Unknown error'}</pre>
+      </div>
+    );
+  }
+
   const maxProfCount = data.byProfession[0]?.count ?? 1;
   const maxExpCount  = data.byExperience.reduce((m, e) => Math.max(m, e.count), 1);
 
