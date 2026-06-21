@@ -37,13 +37,14 @@ export async function getWorkforceData(): Promise<WorkforceData> {
     const profession = String(r.fields[COL_PROFESSION]  ?? '').trim();
     const experience = String(r.fields[COL_EXPERIENCE]  ?? '').trim();
 
-    if (category) {
-      byCategoryMap[category] = (byCategoryMap[category] ?? 0) + 1;
-    }
+    // Pre-taxonomy rows have no category — bucket them under 'სხვა' so
+    // sum(byCategory) always equals total approved.
+    const effectiveCategory = category || 'სხვა';
+    byCategoryMap[effectiveCategory] = (byCategoryMap[effectiveCategory] ?? 0) + 1;
 
-    if (profession && category !== 'სხვა') {
+    if (profession && effectiveCategory !== 'სხვა') {
       if (!byProfessionMap[profession]) {
-        byProfessionMap[profession] = { category, count: 0 };
+        byProfessionMap[profession] = { category: effectiveCategory, count: 0 };
       }
       byProfessionMap[profession].count += 1;
     }
