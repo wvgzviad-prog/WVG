@@ -49,7 +49,12 @@ interface ListOptions {
 let cachedToken: { accessToken: string; expiresAt: number } | null = null;
 
 function privateKey() {
-  return (RAW_PRIVATE_KEY ?? '').replace(/\\n/g, '\n');
+  let key = RAW_PRIVATE_KEY ?? '';
+  // Strip surrounding double-quotes added by some env editors or Vercel paste
+  key = key.replace(/^"([\s\S]*)"$/, '$1');
+  // Normalize escaped \n sequences (Vercel single-line format) to real newlines
+  key = key.replace(/\\n/g, '\n');
+  return key;
 }
 
 function base64url(input: Buffer | string) {
