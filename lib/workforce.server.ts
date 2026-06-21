@@ -19,6 +19,10 @@ export interface WorkforceData {
   byCategory: { category: string; count: number }[];
   byProfession: { profession: string; category: string; count: number }[];
   byExperience: { level: string; count: number }[];
+  _debug?: {
+    allFieldKeys: string[];
+    rawExperienceValues: string[];
+  };
 }
 
 export async function getWorkforceData(): Promise<WorkforceData> {
@@ -68,5 +72,13 @@ export async function getWorkforceData(): Promise<WorkforceData> {
     byExperience: EXPERIENCE_ORDER
       .filter(level => byExperienceMap[level] !== undefined)
       .map(level => ({ level, count: byExperienceMap[level] })),
+
+    // TEMPORARY — remove after diagnosing byExperience
+    _debug: {
+      allFieldKeys: records[0] ? Object.keys(records[0].fields) : [],
+      rawExperienceValues: [...new Set(
+        approved.map(r => String(r.fields[COL_EXPERIENCE] ?? '')).filter(Boolean)
+      )],
+    },
   };
 }
