@@ -19,10 +19,6 @@ export interface WorkforceData {
   byCategory: { category: string; count: number }[];
   byProfession: { profession: string; category: string; count: number }[];
   byExperience: { level: string; count: number }[];
-  _debug?: {
-    allFieldKeys: string[];
-    rawExperienceValues: string[];
-  };
 }
 
 export async function getWorkforceData(): Promise<WorkforceData> {
@@ -69,16 +65,15 @@ export async function getWorkforceData(): Promise<WorkforceData> {
       .sort((a, b) => b.count - a.count)
       .slice(0, 20),
 
-    byExperience: EXPERIENCE_ORDER
-      .filter(level => byExperienceMap[level] !== undefined)
-      .map(level => ({ level, count: byExperienceMap[level] })),
-
-    // TEMPORARY — remove after diagnosing byExperience
-    _debug: {
-      allFieldKeys: records[0] ? Object.keys(records[0].fields) : [],
-      rawExperienceValues: [...new Set(
-        approved.map(r => String(r.fields[COL_EXPERIENCE] ?? '')).filter(Boolean)
-      )],
-    },
+    byExperience: [
+      // Known standard labels in display order
+      ...EXPERIENCE_ORDER.filter(level => byExperienceMap[level] !== undefined)
+        .map(level => ({ level, count: byExperienceMap[level] })),
+      // Legacy / free-text values not in the standard list, sorted alphabetically
+      ...Object.entries(byExperienceMap)
+        .filter(([level]) => !EXPERIENCE_ORDER.includes(level))
+        .sort(([a], [b]) => a.localeCompare(b))
+        .map(([level, count]) => ({ level, count })),
+    ],
   };
 }
