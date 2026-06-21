@@ -28,6 +28,7 @@ export const SHEET_NAMES = {
   payments: process.env.GOOGLE_SHEET_PAYMENTS ?? 'Payments',
   monitoring: process.env.GOOGLE_SHEET_MONITORING ?? 'Monitoring',
   documents: process.env.GOOGLE_SHEET_DOCUMENTS ?? 'Documents',
+  tallyRegistrations: process.env.GOOGLE_SHEET_TALLY_REGISTRATIONS ?? 'WVG-კანდიდატების რეგისტრაცია',
 } as const;
 
 export type TableName = keyof typeof SHEET_NAMES;
