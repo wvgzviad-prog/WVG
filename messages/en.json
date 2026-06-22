@@ -286,9 +286,8 @@
       { "name": "Affidavit",                      "desc": "Notarised sworn statement" },
       { "name": "Declaration",                    "desc": "Personal declaration document" },
       { "name": "Recommendation Letters",         "desc": "From previous employers" },
-      { "name": "Employment Experience Documents","desc": "Work book, reference letters" },
-      { "name": "Cover Letter",                   "desc": "Description of your qualifications and motivation" },
-      { "name": "CV",                             "desc": "Summary of work experience" }
+      { "name": "Professional Qualification Documents","desc": "Work book, reference letters" },
+      { "name": "CV",                               "desc": "Summary of work experience" }
     ]
   },
   "procedure": {
