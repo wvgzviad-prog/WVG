@@ -279,54 +279,16 @@
     "subtitle": "Prepare all documents before departure",
     "note": "Document requirements may vary depending on the country, employer, and legal procedure.",
     "docs": [
-      {
-        "name": "Passport",
-        "desc": "Valid international passport (min. 6 months validity)"
-      },
-      {
-        "name": "ID Card",
-        "desc": "Georgian identity card"
-      },
-      {
-        "name": "CV",
-        "desc": "Work experience description"
-      },
-      {
-        "name": "Medical Certificate",
-        "desc": "Medical examination results"
-      },
-      {
-        "name": "Criminal Record Certificate",
-        "desc": "From the court state service"
-      },
-      {
-        "name": "Apostille",
-        "desc": "State certification of documents"
-      },
-      {
-        "name": "Recommendation Letter",
-        "desc": "From previous employer (useful)"
-      },
-      {
-        "name": "Photo",
-        "desc": "Recent photo (last 6 months)"
-      },
-      {
-        "name": "WVG Contract",
-        "desc": "Agreement signed with WVG"
-      },
-      {
-        "name": "3L Israel Contract",
-        "desc": "Israeli employer contract"
-      },
-      {
-        "name": "Affidavit",
-        "desc": "Legal affidavit"
-      },
-      {
-        "name": "Declaration",
-        "desc": "Personal declaration"
-      }
+      { "name": "Passport",                       "desc": "Valid international passport" },
+      { "name": "ID Card",                        "desc": "Georgian identity card" },
+      { "name": "Criminal Record Certificate",    "desc": "From the court state service" },
+      { "name": "Medical Certificate",            "desc": "Medical examination results" },
+      { "name": "Affidavit",                      "desc": "Notarised sworn statement" },
+      { "name": "Declaration",                    "desc": "Personal declaration document" },
+      { "name": "Recommendation Letters",         "desc": "From previous employers" },
+      { "name": "Employment Experience Documents","desc": "Work book, reference letters" },
+      { "name": "Cover Letter",                   "desc": "Description of your qualifications and motivation" },
+      { "name": "CV",                             "desc": "Summary of work experience" }
     ]
   },
   "procedure": {
