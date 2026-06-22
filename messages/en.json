@@ -281,12 +281,12 @@
     "docs": [
       { "name": "Passport",                       "desc": "Valid international passport" },
       { "name": "ID Card",                        "desc": "Georgian identity card" },
-      { "name": "Criminal Record Certificate",    "desc": "From the court state service" },
-      { "name": "Medical Certificate",            "desc": "Medical examination results" },
-      { "name": "Affidavit",                      "desc": "Notarised sworn statement" },
-      { "name": "Declaration",                    "desc": "Personal declaration document" },
+      { "name": "Criminal Record Certificate",    "desc": "Issued by the Public Service Agency of the Ministry of Internal Affairs, with Apostille" },
+      { "name": "Medical Certificate",            "desc": "Issued by a medical institution, with Apostille" },
+      { "name": "Affidavit",                      "desc": "Notarized document, with Apostille" },
+      { "name": "Declaration",                    "desc": "Notarized document, with Apostille" },
       { "name": "Recommendation Letters",         "desc": "From previous employers" },
-      { "name": "Professional Qualification Documents","desc": "Work book, reference letters" },
+      { "name": "Professional Qualification Documents","desc": "Certificates, Diplomas" },
       { "name": "CV",                               "desc": "Summary of work experience" }
     ]
   },
