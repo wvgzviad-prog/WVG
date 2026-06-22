@@ -34,8 +34,8 @@ export default function ContactPage() {
     {
       icon: <Mail size={22} className="text-blue-300" />,
       label: t('contact.email'),
-      value: 'info@wvg.ge',
-      href: 'mailto:info@wvg.ge',
+      value: 'wvg.zviad@gmail.com',
+      href: 'mailto:wvg.zviad@gmail.com',
     },
     {
       icon: <MapPin size={22} className="text-red-300" />,
