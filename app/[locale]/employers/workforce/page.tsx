@@ -1,4 +1,5 @@
 import { getWorkforceData } from '@/lib/workforce.server';
+import { translateCategory, translateProfession, translateExperience } from '@/lib/workforce-taxonomy';
 import Link from 'next/link';
 import { Users, ArrowRight, MessageCircle, Briefcase, ShieldCheck, RefreshCw } from 'lucide-react';
 
@@ -94,30 +95,6 @@ const CATEGORY_ICON: Record<string, string> = {
   'მომსახურება და მოვლა':               '🤝',
   'დამხმარე სამუშაოები':                '🔧',
 };
-
-// ── Experience label normalizer (display only) ─────────────────────────────────
-
-const STANDARD_EXP = new Set([
-  'გამოცდილების გარეშე',
-  '0–2 წელი',
-  '2–5 წელი',
-  '5–10 წელი',
-  '10+ წელი',
-]);
-
-function normalizeExpLabel(raw: string): string {
-  if (STANDARD_EXP.has(raw)) return raw;
-  // Normalise hyphen ranges to em-dash versions first
-  const mapped: Record<string, string> = {
-    '0-2':  '0–2 წელი',
-    '2-5':  '2–5 წელი',
-    '5-10': '5–10 წელი',
-  };
-  if (mapped[raw]) return mapped[raw];
-  // Bare numbers / "10+" style: append " წელი" if not already there
-  if (/^\d/.test(raw) && !raw.includes('წელი')) return `${raw} წელი`;
-  return raw;
-}
 
 // ── Page ──────────────────────────────────────────────────────────────────────
 
@@ -235,12 +212,13 @@ export default async function WorkforcePage({
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(200px,1fr))', gap: 16 }}>
               {mainCategories.map(({ category, count }) => {
-                const color = CATEGORY_COLOR[category] ?? '#64748b';
-                const icon  = CATEGORY_ICON[category]  ?? '📋';
+                const color       = CATEGORY_COLOR[category] ?? '#64748b';
+                const icon        = CATEGORY_ICON[category]  ?? '📋';
+                const displayCat  = translateCategory(category, locale as Locale);
                 return (
                   <div key={category} style={{ background: '#fff', border: '1px solid #e2e8f0', borderRadius: 14, padding: '20px 18px', borderTop: `3px solid ${color}` }}>
                     <div style={{ fontSize: 24, marginBottom: 10 }}>{icon}</div>
-                    <div style={{ fontSize: 13, fontWeight: 600, color: '#0f2557', marginBottom: 10, lineHeight: 1.3 }}>{category}</div>
+                    <div style={{ fontSize: 13, fontWeight: 600, color: '#0f2557', marginBottom: 10, lineHeight: 1.3 }}>{displayCat}</div>
                     <div style={{ fontSize: 32, fontWeight: 900, color, lineHeight: 1 }}>{count}</div>
                     <div style={{ fontSize: 11, color: '#94a3b8', marginTop: 2 }}>{c.candidates}</div>
                   </div>
@@ -269,19 +247,21 @@ export default async function WorkforcePage({
               </div>
 
               {data.byProfession.map(({ profession, category, count }, i) => {
-                const color = CATEGORY_COLOR[category] ?? '#64748b';
-                const barPct = Math.round((count / maxProfCount) * 100);
+                const color          = CATEGORY_COLOR[category] ?? '#64748b';
+                const barPct         = Math.round((count / maxProfCount) * 100);
+                const displayProf    = translateProfession(profession, locale as Locale);
+                const displayCat     = translateCategory(category, locale as Locale);
                 return (
                   <div key={profession} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 100px', padding: '12px 20px', alignItems: 'center', borderBottom: i < data.byProfession.length - 1 ? '1px solid #f1f5f9' : 'none', background: i % 2 === 0 ? '#fff' : '#fafafa' }}>
                     <div>
-                      <div style={{ fontSize: 13, fontWeight: 600, color: '#0f2557', marginBottom: 4 }}>{profession}</div>
+                      <div style={{ fontSize: 13, fontWeight: 600, color: '#0f2557', marginBottom: 4 }}>{displayProf}</div>
                       <div style={{ height: 3, background: '#e2e8f0', borderRadius: 2, width: 120 }}>
                         <div style={{ height: 3, width: `${barPct}%`, background: color, borderRadius: 2 }} />
                       </div>
                     </div>
                     <div>
                       <span style={{ display: 'inline-block', fontSize: 11, fontWeight: 500, color, background: `${color}18`, border: `1px solid ${color}40`, borderRadius: 6, padding: '2px 8px' }}>
-                        {category}
+                        {displayCat}
                       </span>
                     </div>
                     <div style={{ fontSize: 18, fontWeight: 800, color: '#0f2557' }}>{count}</div>
@@ -293,17 +273,19 @@ export default async function WorkforcePage({
             {/* Mobile cards */}
             <div className="md:hidden" style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
               {data.byProfession.map(({ profession, category, count }, i) => {
-                const color = CATEGORY_COLOR[category] ?? '#64748b';
-                const barPct = Math.round((count / maxProfCount) * 100);
+                const color       = CATEGORY_COLOR[category] ?? '#64748b';
+                const barPct      = Math.round((count / maxProfCount) * 100);
+                const displayProf = translateProfession(profession, locale as Locale);
+                const displayCat  = translateCategory(category, locale as Locale);
                 return (
                   <div key={profession} style={{ background: '#fff', border: '1px solid #e2e8f0', borderRadius: 12, padding: '14px 16px', borderLeft: `3px solid ${color}` }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 8 }}>
-                      <div style={{ fontSize: 13, fontWeight: 600, color: '#0f2557', flex: 1, marginRight: 8 }}>{profession}</div>
+                      <div style={{ fontSize: 13, fontWeight: 600, color: '#0f2557', flex: 1, marginRight: 8 }}>{displayProf}</div>
                       <div style={{ fontSize: 20, fontWeight: 900, color: '#0f2557' }}>{count}</div>
                     </div>
                     <div style={{ marginBottom: 8 }}>
                       <span style={{ display: 'inline-block', fontSize: 11, fontWeight: 500, color, background: `${color}18`, border: `1px solid ${color}40`, borderRadius: 6, padding: '2px 8px' }}>
-                        {category}
+                        {displayCat}
                       </span>
                     </div>
                     <div style={{ height: 3, background: '#e2e8f0', borderRadius: 2 }}>
@@ -328,7 +310,7 @@ export default async function WorkforcePage({
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: 14, maxWidth: 560 }}>
               {data.byExperience.map(({ level, count }) => {
-                const label = normalizeExpLabel(level);
+                const label = translateExperience(level, locale as Locale);
                 const barPct = Math.round((count / maxExpCount) * 100);
                 return (
                   <div key={level}>
